@@ -3,38 +3,36 @@ import './WhyUsSection.css';
 
 const WhyUsSection = () => {
   return (
-    <section className="bg-black py-20">
-      <div className="container mx-auto px-5">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative order-2 lg:order-1">
+    <section className="whyus-section">
+      <div className="whyus-container">
+        <div className="whyus-flex-row">
+          {/* Merged images in a single horizontal row */}
+          <div className="whyus-img-merged">
             <img 
-              src="/images/img_image_768x325.png" alt="Sustainable products" className="w-full h-auto rounded-tl-3xl rounded-br-3xl object-cover"
+              src="/images/img_image_768x325.png" 
+              alt="Sustainable products" 
+              className="whyus-img whyus-img-left"
             />
-            <img 
-              src="/images/img_image_768x412.png" alt="Eco-friendly materials" className="w-full h-auto mt-4 rounded-tr-3xl rounded-bl-3xl object-cover"
-            />
-            
-            {/* Green badge */}
-            <div className="absolute bottom-0 right-0 transform translate-x-1/4 translate-y-1/4">
-              <div className="relative bg-[#4caf4f] w-64 h-64 rounded-md">
-                <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black text-3xl font-normal text-center leading-9">
-                  Leave<br />No Trace!
-                </p>
+            <div className="whyus-img2-badge-wrapper">
+              <img 
+                src="/images/img_image_768x412.png" 
+                alt="Eco-friendly materials" 
+                className="whyus-img whyus-img-right"
+              />
+              {/* Flower SVG badge below image 2, same as Zero Waste */}
+              <div className="whyus-svg-badge-wrapper">
+                <img src="/images/img_union.svg" alt="Leave No Trace badge" className="whyus-svg-badge" />
+                <p className="whyus-svg-badge-text">Leave<br />No Trace!</p>
               </div>
             </div>
-            
-            {/* Arrow button */}
-            <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#4e9883] w-[106px] h-[106px] rounded-full flex items-center justify-center">
-              <img src="/images/img_carbonarrowup.svg" alt="Arrow" className="w-[53px] h-[53px]" />
-            </button>
           </div>
-          
-          <div className="order-1 lg:order-2">
-            <h3 className="text-[#f1e811] text-4xl font-normal mb-6">WHY US</h3>
-            <h2 className="text-[#f1e811] text-7xl font-medium leading-tight mb-10">
-              Partnering<br />For Change
+          {/* Text content as a sibling */}
+          <div className="whyus-text-content">
+            <h3 className="whyus-heading">WHY US</h3>
+            <h2 className="whyus-title">
+              Partnering For Change
             </h2>
-            <p className="text-[#f1e811]/50 text-xl leading-relaxed">
+            <p className="whyus-desc">
               Our journey began with a shared concern for the excessive use of plastic in food takeaway packaging. 
               Witnessing the environmental impact of single-use plastics motivated us to take action. 
               Our founders saw an opportunity to create positive change by providing sustainable alternatives 
