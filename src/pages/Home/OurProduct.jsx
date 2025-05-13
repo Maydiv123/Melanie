@@ -74,7 +74,7 @@ const ProductsSection = () => {
     
       
       {/* Hero with banner image */}
-      <div className="dark-products-hero banner-image-hero" style={{ backgroundImage: `url(${bannerImg})` }}>
+      <div className="dark-products-hero banner-image-hero banner-image-hero-bg">
         <div className="banner-image-overlay" />
         <div className="dark-products-hero-content">
           <h1 className="dark-products-title">Our products</h1>

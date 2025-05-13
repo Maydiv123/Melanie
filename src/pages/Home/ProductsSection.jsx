@@ -26,41 +26,36 @@ const ProductsSection = () => {
   ];
 
   return (
-    <section className="bg-black py-20">
-      <div className="container mx-auto px-5">
-        <div className="flex justify-between items-center mb-12">
-          <h2 className="text-[#f1e811] text-5xl font-semibold">Explore top Products</h2>
-          
-          <Link to="/products" className="bg-[#ffea00] rounded-full py-5 px-8 flex items-center">
-            <span className="text-black text-xl font-medium mr-4">Explore Listings</span>
-            <img src="/images/img_arrowright.svg" alt="Arrow right" className="w-8 h-8" />
+    <section className="products-section">
+      <div className="products-container">
+        <div className="products-header-row">
+          <h2 className="products-title">Explore top Products</h2>
+          <Link to="/products" className="products-explore-btn">
+            <span className="products-explore-text">Explore Listings</span>
+            <img src="/images/img_arrowright.svg" alt="Arrow right" className="products-explore-arrow" />
           </Link>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="products-grid">
           {products.map((product) => (
-            <div key={product.id} className="bg-[#ddd406] rounded-[42px] overflow-hidden">
-              <div className="p-8">
+            <div key={product.id} className="products-card">
+              <div className="products-card-inner">
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-auto rounded-[44px] mb-8"
+                  className="products-card-img"
                 />
-                
-                <div className="flex justify-between items-center">
-                  <h3 className="text-black text-3xl font-semibold capitalize">{product.name}</h3>
-                  
-                  <Link to={product.link} className="w-[53px] h-[53px] rounded-full border border-black flex items-center justify-center">
-                    <img src="/images/img_arrowright.svg" alt="View product" className="w-10 h-10" />
+                <div className="products-card-bottom-row">
+                  <h3 className="products-card-title">{product.name}</h3>
+                  <Link to={product.link} className="products-card-link">
+                    <img src="/images/img_arrowright.svg" alt="View product" className="products-card-link-arrow" />
                   </Link>
                 </div>
               </div>
             </div>
           ))}
         </div>
-        
-        <div className="mt-10">
-          <img src="/images/img_slider.svg" alt="Slider" className="w-full" />
+        <div className="products-slider-row">
+          <img src="/images/img_slider.svg" alt="Slider" className="products-slider-img" />
         </div>
       </div>
     </section>

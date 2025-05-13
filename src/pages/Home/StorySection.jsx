@@ -3,30 +3,28 @@ import './StorySection.css';
 
 const StorySection = () => {
   return (
-    <section className="bg-black py-20">
-      <div className="container mx-auto px-5">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="story-section">
+      <div className="story-container">
+        <div className="story-grid">
           <div>
-            <h3 className="text-[#f1e811] text-4xl font-normal mb-6">OUR STORY</h3>
-            <h2 className="text-[#f1e811] text-7xl font-medium leading-tight mb-10">
+            <h3 className="story-heading">OUR STORY</h3>
+            <h2 className="story-title">
               Our Journey Towards Sustainability
             </h2>
-            <p className="text-[#f1e811]/50 text-xl leading-relaxed">
+            <p className="story-desc">
               Our journey began with a shared concern for the excessive use of plastic in food takeaway packaging. 
               Witnessing the environmental impact of single-use plastics motivated us to take action. 
               Our founders saw an opportunity to create positive change by providing sustainable alternatives 
               for businesses and individuals who shared our passion for a greener planet.
             </p>
           </div>
-          
-          <div className="relative">
+          <div className="story-img-col">
             <img 
-              src="/images/img_image.png" alt="Toilet paper rolls" className="w-full h-auto rounded-[78px] object-cover"
-            />
-            <div className="absolute top-0 left-0 transform -translate-x-1/4 -translate-y-1/4">
-              <div className="relative">
-                <img src="/images/img_union.svg" alt="Zero Waste badge" className="w-52 h-52" />
-                <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black text-3xl font-normal text-center leading-7">
+              src="/images/img_image.png" alt="Toilet paper rolls" className="story-main-img" />
+            <div className="story-badge-outer">
+              <div className="story-badge-inner">
+                <img src="/images/img_union.svg" alt="Zero Waste badge" className="story-badge-img" />
+                <p className="story-badge-text">
                   Zero<br />Waste
                 </p>
               </div>

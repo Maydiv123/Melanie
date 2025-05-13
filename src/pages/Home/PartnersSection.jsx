@@ -2,9 +2,9 @@ import React from 'react';
 import './PartnersSection.css';
 
 const partners = [
-  { name: 'STARBUCKS', logo: null },
+  { name: 'STARBUCKS', logo: '/images/img_starbucks.png' },
   { name: null, logo: '/images/img_walmart.svg' },
-  { name: "McDonald's", logo: null },
+  { name: "McDonald's", logo: '/images/img_mcdonalds.png' },
   { name: null, logo: '/images/img_nestl.svg' },
   { name: null, logo: '/images/img_pepsi.svg' },
 ];
@@ -32,7 +32,7 @@ const logoStyle = {
 
 const PartnersSection = () => {
   return (
-    <section className="bg-black py-16">
+    <section className="partners-section">
       <div className="container mx-auto px-5">
         {/* Small heading */}
         <h3 className="text-[#ffea00] text-3xl font-bold text-center mb-8">Our Partners</h3>
@@ -42,13 +42,13 @@ const PartnersSection = () => {
           {partners.map((partner, idx) => (
             <span
               key={partner.logo || partner.name || idx}
-              style={partnerStyle}
+              className="partner-style"
             >
               {partner.logo ? (
                 <img
                   src={partner.logo}
                   alt={partner.name || 'partner logo'}
-                  style={logoStyle}
+                  className="partner-logo"
                 />
               ) : (
                 partner.name

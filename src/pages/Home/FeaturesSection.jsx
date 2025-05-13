@@ -22,14 +22,13 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="bg-black py-20">
-      <div className="container mx-auto px-5">
-        <h2 className="text-[#f1e811] text-5xl font-semibold text-center mb-4">Embark on Your Green Journey</h2>
-        <p className="text-[#4c4a2b] text-2xl font-medium text-center mb-16 max-w-4xl mx-auto">
+    <section className="features-section">
+      <div className="features-container">
+        <h2 className="features-title">Embark on Your Green Journey</h2>
+        <p className="features-desc">
           Advanced AI-Powered Proctoring Solutions for Unmatched Exam Integrity.
         </p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="features-grid">
           {features.map((feature, index) => (
             <Card
               key={index}

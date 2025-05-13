@@ -4,22 +4,22 @@ import './CtaSection.css';
 
 const CtaSection = () => {
   return (
-    <section className="bg-[#121212] py-32 relative">
+    <section className="cta-section">
       {/* Top wave decoration */}
-      <div className="absolute top-0 left-0 w-full">
-        <img src="/images/img_frame_34.svg" alt="Top wave decoration" className="w-full" />
+      <div className="cta-top-wave">
+        <img src="/images/img_frame_34.svg" alt="Top wave decoration" className="cta-wave-img" />
       </div>
       
       {/* Main content */}
-      <div className="container mx-auto px-5 relative z-10">
-        <h2 className="text-[#f1e811] text-7xl md:text-8xl font-semibold text-center max-w-5xl mx-auto leading-tight mb-16">
+      <div className="cta-container">
+        <h2 className="cta-title">
           Start Swapping for a Greener World
         </h2>
         
-        <div className="flex justify-center">
+        <div className="cta-btn-row">
           <Button 
             onClick={() => window.location.href = '/get-started'}
-            variant="primary" size="large" className="py-5 px-12 text-xl"
+            variant="primary" size="large" className="cta-btn"
           >
             Get Started
           </Button>
@@ -27,8 +27,8 @@ const CtaSection = () => {
       </div>
       
       {/* Bottom wave decoration */}
-      <div className="absolute bottom-0 left-0 w-full">
-        <img src="/images/img_frame_19.svg" alt="Bottom wave decoration" className="w-full" />
+      <div className="cta-bottom-wave">
+        <img src="/images/img_frame_19.svg" alt="Bottom wave decoration" className="cta-wave-img" />
       </div>
     </section>
   );
