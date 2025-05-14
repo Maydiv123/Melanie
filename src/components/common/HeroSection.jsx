@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './HeroSection.css';
 
 const word = "LIFE";
 const DOT_SIZE = 16;
@@ -51,37 +52,37 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="hero-section">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="background-image">
         <img 
-          src="/images/img_background_image.png" alt="Green leaves background" className="w-full h-full object-cover"
+          src="/images/img_background_image.png" alt="Green leaves background"
         />
       </div>
       
       {/* Social Media Icons */}
-      <div className="absolute left-20 top-1/2 transform -translate-y-1/2 flex flex-col space-y-14 z-10">
-        <a href="#" className="text-[#ffea00] hover:text-white transition-colors">
-          <img src="/images/img_facebook.svg" alt="Facebook" className="w-7 h-7" />
+      <div className="social-icons">
+        <a href="#" className="social-icon">
+          <img src="/images/img_facebook.svg" alt="Facebook" />
         </a>
-        <a href="#" className="text-[#ffea00] hover:text-white transition-colors">
-          <img src="/images/img_twitter.svg" alt="Twitter" className="w-7 h-8" />
+        <a href="#" className="social-icon">
+          <img src="/images/img_twitter.svg" alt="Twitter" />
         </a>
-        <a href="#" className="text-[#ffea00] hover:text-white transition-colors">
-          <img src="/images/img_instagram.svg" alt="Instagram" className="w-7 h-7" />
+        <a href="#" className="social-icon">
+          <img src="/images/img_instagram.svg" alt="Instagram" />
         </a>
       </div>
       
       {/* Main Content */}
-      <div className="relative z-10 text-center">
-        <div className="flex flex-col items-center">
-          <p className="text-[#ffea00] text-2xl font-bold tracking-widest uppercase mb-4">I AM</p>
+      <div className="main-content">
+        <div className="content-container">
+          <p className="iam-text">I AM</p>
           <div className="flex justify-center items-center">
             {word.split('').map((char, letterIdx) => {
               const grid = PIXEL_FONT[char];
               let dotIdx = 0;
               return (
-                <span key={letterIdx} style={{ position: 'relative', display: 'inline-block', width: GRID_COLS * (DOT_SIZE + DOT_GAP), height: GRID_ROWS * (DOT_SIZE + DOT_GAP), marginRight: 32 }}>
+                <span key={letterIdx} className="letter-container">
                   {grid && grid.map((row, rowIdx) =>
                     row.split('').map((cell, colIdx) => {
                       if (cell === '1') {
@@ -92,18 +93,11 @@ const HeroSection = () => {
                         return (
                           <span
                             key={colIdx + '-' + rowIdx}
+                            className="dot"
                             style={{
-                              position: 'absolute',
-                              width: DOT_SIZE,
-                              height: DOT_SIZE,
-                              borderRadius: '50%',
-                              background: '#ffea00',
                               left: assembled ? left : `${origin.x}vw`,
                               top: assembled ? top : `${origin.y}vh`,
-                              opacity: 1,
-                              transition: `all 1s cubic-bezier(.68,-0.55,.27,1.55) ${(rowIdx + colIdx) * 0.04 + letterIdx * 0.1}s`,
-                              zIndex: 2,
-                              fontSize: 0
+                              transition: `all 1s cubic-bezier(.68,-0.55,.27,1.55) ${(rowIdx + colIdx) * 0.04 + letterIdx * 0.1}s`
                             }}
                           />
                         );
@@ -115,8 +109,8 @@ const HeroSection = () => {
               );
             })}
           </div>
-          <div className="mt-8 text-left">
-            <p className="text-[#ffea00] text-2xl font-bold tracking-widest uppercase leading-10">
+          <div className="environmentalist-text">
+            <p>
               AN<br />
               Environmentalist
             </p>
@@ -125,9 +119,9 @@ const HeroSection = () => {
       </div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-20 right-10 flex flex-col items-center z-10">
-        <p className="text-[#ffea00] text-sm font-bold tracking-widest uppercase mb-2">Scroll</p>
-        <div className="w-px h-12 bg-[#ffea00]"></div>
+      <div className="scroll-indicator">
+        <p className="scroll-text">Scroll</p>
+        <div className="scroll-line"></div>
       </div>
     </section>
   );

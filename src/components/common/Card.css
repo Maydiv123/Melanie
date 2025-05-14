@@ -1,5 +1,36 @@
 /* Card component styles */
 
 .card {
-  /* Add custom styles here if needed */
+  background-color: #161616;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 30px #f1e811;
+  height: 500px;
+  width: 400px;
+}
+
+.card-icon {
+  margin-bottom: 2rem;
+}
+
+.card-icon img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.card-title {
+  color: #f1e811;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  color: #9b9744;
+  font-size: 1.25rem;
+  text-align: center;
 } 

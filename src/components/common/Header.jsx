@@ -25,7 +25,7 @@ const Header = () => {
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5`}>
       <div className="container mx-auto px-5 flex justify-between items-center">
         <div className="flex items-center">
-          <img src={MelanieLogo} alt="Melanie Logo" style={{ height: 64, width: 'auto', display: 'block' }} />
+          <img src={MelanieLogo} alt="Melanie Logo" className="melanie-logo" />
         </div>
         <nav className="hidden md:flex space-x-8">
           <Link to="/" className="text-[#ffea00] uppercase text-lg font-medium hover:text-white transition-colors">

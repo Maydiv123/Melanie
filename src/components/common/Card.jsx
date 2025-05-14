@@ -12,11 +12,11 @@ const Card = ({
   descriptionClassName = ''
 }) => {
   return (
-    <div className={`bg-[#161616] rounded-3xl p-8 flex flex-col items-center shadow-[0px_0px_30px_#f1e811] ${className}`}>
+    <div className={`card ${className}`}>
       {icon && (
-        <div className={`mb-8 ${iconClassName}`}>
+        <div className={`card-icon ${iconClassName}`}>
           {typeof icon === 'string' ? (
-            <img src={icon} alt={title} className="w-24 h-24" />
+            <img src={icon} alt={title} />
           ) : (
             icon
           )}
@@ -24,13 +24,13 @@ const Card = ({
       )}
       
       {title && (
-        <h3 className={`text-[#f1e811] text-3xl font-semibold text-center mb-4 ${titleClassName}`}>
+        <h3 className={`card-title ${titleClassName}`}>
           {title}
         </h3>
       )}
       
       {description && (
-        <p className={`text-[#9b9744] text-xl text-center ${descriptionClassName}`}>
+        <p className={`card-description ${descriptionClassName}`}>
           {description}
         </p>
       )}
