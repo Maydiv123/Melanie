@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5`}>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5 ${scrolled ? 'scrolled-header' : ''}`}>
       <div className="container mx-auto px-5 flex justify-between items-center">
         <div className="flex items-center">
           <img src={MelanieLogo} alt="Melanie Logo" className="melanie-logo" />
