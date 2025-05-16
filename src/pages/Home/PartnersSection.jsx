@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './PartnersSection.css';
 
 const partners = [
-  { name: 'STARBUCKS', logo: '/images/img_starbucks.png' },
-  { name: null, logo: '/images/img_walmart.svg' },
-  { name: "McDonald's", logo: '/images/img_mcdonalds.png' },
-  { name: null, logo: '/images/img_nestl.svg' },
-  { name: null, logo: '/images/img_pepsi.svg' },
+  { name: 'STARBUCKS', logo: '/images/img_starbucks.png', color: 'starbucks' },
+  { name: 'Walmart', logo: '/images/img_walmart.svg', color: 'walmart' },
+  { name: "McDonald's", logo: '/images/img_mcdonalds.png', color: 'mcdonalds' },
+  { name: 'Nestle', logo: '/images/img_nestl.svg', color: 'nestle' },
+  { name: 'Pepsi', logo: '/images/img_pepsi.svg', color: 'pepsi' },
 ];
+
+// Duplicate the partners to create a continuous flow
+const allPartners = [...partners, ...partners];
 
 const partnerStyle = {
   color: '#ffea00',
@@ -31,30 +34,47 @@ const logoStyle = {
 };
 
 const PartnersSection = () => {
+  const [isPaused, setIsPaused] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState(null);
+
+  const handleMouseEnter = (name, idx) => {
+    setIsPaused(true);
+    setHoveredItem(name);
+    console.log("Hovering over:", name); // Debug logging
+  };
+
+  const handleMouseLeave = () => {
+    setIsPaused(false);
+    setHoveredItem(null);
+  };
+
   return (
     <section className="partners-section">
       <div className="container mx-auto px-5">
         {/* Small heading */}
         <h3 className="text-[#ffea00] text-3xl font-bold text-center mb-8">Our Partners</h3>
 
-        {/* All partners in a single row */}
-        <div className="flex flex-nowrap justify-center items-center gap-x-16 overflow-x-auto pb-2 scrollbar-hide">
-          {partners.map((partner, idx) => (
+        {/* Slider container */}
+        <div 
+          className={`partners-slider ${isPaused ? 'paused' : ''}`}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          <div className="partners-track">
+            {allPartners.map((partner, idx) => (
             <span
-              key={partner.logo || partner.name || idx}
-              className="partner-style"
-            >
-              {partner.logo ? (
+                key={`${partner.name}-${idx}`}
+                className={`partner-item ${hoveredItem === partner.name ? `hovered ${partner.color}-color` : ''}`}
+                onMouseEnter={() => handleMouseEnter(partner.name, idx)}
+                onMouseLeave={handleMouseLeave}
+              >
                 <img
                   src={partner.logo}
                   alt={partner.name || 'partner logo'}
                   className="partner-logo"
                 />
-              ) : (
-                partner.name
-              )}
             </span>
           ))}
+          </div>
         </div>
       </div>
     </section>

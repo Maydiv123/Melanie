@@ -59,6 +59,12 @@
   object-fit: cover;
   border-radius: 0;
   display: block;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.whyus-img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 32px rgba(241,232,17,0.15);
 }
 
 .whyus-img-left {
@@ -247,8 +253,10 @@
   margin: 0 1.5rem;
   width: 64px;
   height: 64px;
-
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
 }
+
+
 
 .whyus-trace-badge-text {
   position: absolute;
@@ -277,6 +285,11 @@
   z-index: 3;
   width: 210px;
   height: 210px;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.whyus-trace-badge-container:hover {
+  transform: translate(-50%, -50%) scale(1.10);
 }
 
 .whyus-trace-badge-img {

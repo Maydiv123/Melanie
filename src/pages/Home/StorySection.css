@@ -47,7 +47,14 @@
   height: auto;
   border-radius: 78px;
   object-fit: cover;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
 }
+
+.story-main-img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 32px rgba(241,232,17,0.15);
+}
+
 .story-badge-outer {
   position: absolute;
   top: 0;
@@ -56,6 +63,12 @@
 }
 .story-badge-inner {
   position: relative;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.story-badge-inner:hover,
+.story-badge-outer:hover .story-badge-inner {
+  transform: scale(1.10);
 }
 .story-badge-img {
   width: 13rem;

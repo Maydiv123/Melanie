@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin-top: 4rem; /* increased gap below header */
 }
 
 .background-image {
@@ -149,6 +150,7 @@
 @media (max-width: 768px) {
   .hero-section {
     height: 80vh;
+    margin-top: 2rem; /* increased gap on mobile */
   }
   .letter-container {
     width: 70px;
