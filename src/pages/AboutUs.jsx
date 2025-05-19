@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
 import Lottie from 'lottie-react';
-import aboutLottie from '../assets/about.json';
+import aboutLottie from '../assets/About.json';
 import './AboutUs.css';
 
 const SKILLS = [

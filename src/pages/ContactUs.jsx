@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
-import contactLottie from '../assets/contact.json';
+import contactLottie from '../assets/Contact.json';
 import './ContactUs.css';
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
