@@ -11,7 +11,7 @@ import Lottie from 'lottie-react';
 import DeliveryLottie from '../../assets/Delivery.json';
 import QualityLottie from '../../assets/Quality.json';
 import PaymentLottie from '../../assets/Payment.json';
-import allIcon from '../../assets/all.png';
+import allIcon from '../../assets/All.png';
 import tissueIcon from '../../assets/tissue.png';
 import napkinIcon from '../../assets/napkin.png';
 import towelIcon from '../../assets/towel.png';
