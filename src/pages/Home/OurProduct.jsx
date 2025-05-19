@@ -12,11 +12,11 @@ import DeliveryLottie from '../../assets/Delivery.json';
 import QualityLottie from '../../assets/Quality.json';
 import PaymentLottie from '../../assets/Payment.json';
 import allIcon from '../../assets/All.png';
-import tissueIcon from '../../assets/tissue.png';
-import napkinIcon from '../../assets/napkin.png';
-import towelIcon from '../../assets/towel.png';
-import wipesIcon from '../../assets/wipes.png';
-import faceIcon from '../../assets/face.png';
+import tissueIcon from '../../assets/Tissue.png';
+import napkinIcon from '../../assets/Napkin.png';
+import towelIcon from '../../assets/Towel.png';
+import wipesIcon from '../../assets/Wipes.png';
+import faceIcon from '../../assets/Face.png';
 import WishlistIcon from '../../assets/Wishlist.png';
 import CartIcon from '../../assets/Cart.png';
 
