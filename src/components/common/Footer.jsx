@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import MelanieBlackLogo from '../../assets/MelanieBlack.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Brand Section */}
         <div className="brand-section">
-          <h2 className="brand-title">MELANIE</h2>
+          <img src={MelanieBlackLogo} alt="Melanie Logo" className="footer-logo" />
           <p className="copyright">
             Copyright © {currentYear} . <br />
             All Rights reserved

@@ -19,6 +19,7 @@ import wipesIcon from '../../assets/Wipes.png';
 import faceIcon from '../../assets/Face.png';
 import WishlistIcon from '../../assets/Wishlist.png';
 import CartIcon from '../../assets/Cart.png';
+import { useNavigate } from 'react-router-dom';
 
 // Replace the hardcoded products array with imported data
 // const products = [
@@ -69,6 +70,7 @@ const ProductsSection = () => {
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
   const [showPromoText, setShowPromoText] = useState(false);
   const [activeFilter, setActiveFilter] = useState('All');
+  const navigate = useNavigate();
 
   const handleMouseEnter = () => {
     if (videoRef.current) {
@@ -185,7 +187,7 @@ const ProductsSection = () => {
             </div>
             {/* CTAs */}
             <div className="banner-cta-row">
-              <button className="banner-cta-btn">Shop Now</button>
+              <button className="banner-cta-btn">View-Details</button>
               <button className="banner-cta-btn secondary">Learn More</button>
             </div>
           </div>
@@ -223,14 +225,11 @@ const ProductsSection = () => {
                 />
               </div>
               <div className="product-card-actions">
-                <button className="shop-now-btn">Shop Now</button>
-              </div>
-              <div className="product-card-side-icons">
-                <button className="icon-btn" title="Add to Wishlist">
-                  <img src={WishlistIcon} alt="Wishlist" style={{ width: 28, height: 28, objectFit: 'contain' }} />
-                </button>
-                <button className="icon-btn" title="Add to Cart">
-                  <img src={CartIcon} alt="Cart" style={{ width: 28, height: 28, objectFit: 'contain' }} />
+                <button
+                  className="shop-now-btn"
+                  onClick={() => navigate(`/product/${product.id}`, { state: { product } })}
+                >
+                  View-Details
                 </button>
               </div>
             </div>
@@ -254,14 +253,11 @@ const ProductsSection = () => {
                 />
               </div>
               <div className="product-card-actions">
-                <button className="shop-now-btn">Shop Now</button>
-              </div>
-              <div className="product-card-side-icons">
-                <button className="icon-btn" title="Add to Wishlist">
-                  <img src={WishlistIcon} alt="Wishlist" style={{ width: 28, height: 28, objectFit: 'contain' }} />
-                </button>
-                <button className="icon-btn" title="Add to Cart">
-                  <img src={CartIcon} alt="Cart" style={{ width: 28, height: 28, objectFit: 'contain' }} />
+                <button
+                  className="shop-now-btn"
+                  onClick={() => navigate(`/product/${product.id}`, { state: { product } })}
+                >
+                  View-Details
                 </button>
               </div>
             </div>
@@ -332,14 +328,11 @@ const ProductsSection = () => {
                 />
               </div>
               <div className="product-card-actions">
-                <button className="shop-now-btn">Shop Now</button>
-                </div>
-              <div className="product-card-side-icons">
-                <button className="icon-btn" title="Add to Wishlist">
-                  <img src={WishlistIcon} alt="Wishlist" style={{ width: 28, height: 28, objectFit: 'contain' }} />
-                </button>
-                <button className="icon-btn" title="Add to Cart">
-                  <img src={CartIcon} alt="Cart" style={{ width: 28, height: 28, objectFit: 'contain' }} />
+                <button
+                  className="shop-now-btn"
+                  onClick={() => navigate(`/product/${product.id}`, { state: { product } })}
+                >
+                  View-Details
                 </button>
               </div>
             </div>
