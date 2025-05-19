@@ -1,0 +1,127 @@
+/* ProductsSection component styles */
+
+.products-section {
+  /* Add custom styles here if needed */
+  background-color: #000;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.products-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.products-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.products-title {
+  color: #f1e811;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.products-explore-btn {
+  background: #ffea00;
+  border-radius: 9999px;
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.products-explore-text {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-right: 1rem;
+  position: relative;
+  top: -6px;
+}
+
+.products-explore-arrow {
+  width: 2rem;
+  height: 2rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem 2rem;
+}
+
+.products-card {
+  background: #ddd406;
+  border-radius: 42px;
+  overflow: hidden;
+  position: relative;
+}
+
+.products-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  position: relative;
+}
+
+.products-card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 44px;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect for the product images */
+.products-card:hover .products-card-img {
+  transform: scale(1.05);
+  filter: brightness(1.1) contrast(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.products-card-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products-card-title {
+  color: #000;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.products-card-link {
+  width: 53px;
+  height: 53px;
+  border-radius: 9999px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-card-link-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.products-slider-row {
+  margin-top: 2.5rem;
+}
+
+.products-slider-img {
+  width: 100%;
+} 

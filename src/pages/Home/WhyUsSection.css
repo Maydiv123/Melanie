@@ -1,0 +1,308 @@
+/* WhyUsSection component styles */
+
+.whyus-section {
+  background: #000;
+  padding: 5rem 0;
+}
+
+.whyus-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.whyus-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 3vw;
+}
+
+@media (min-width: 1024px) {
+  .whyus-flex-row {
+    flex-direction: row;
+  }
+}
+
+.whyus-img1-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  background-color: white;
+  margin-right: 270px;
+ 
+}
+
+.whyus-img2-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  margin-right: 200px;
+}
+
+.whyus-img-merged {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: auto;
+  gap: 0;
+  margin-right: 350px;
+}
+
+.whyus-img {
+  width: 13vw;
+  height: 30vw;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.whyus-img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 32px rgba(241,232,17,0.15);
+}
+
+.whyus-img-left {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.whyus-img-right {
+  width: 14vw;
+  height: 30vw;
+  object-fit: cover;
+
+  display: block;
+}
+
+.whyus-text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vw;
+  max-width: 30vw;
+}
+
+.whyus-heading {
+  color: #f1e811;
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.whyus-title {
+  color: #f1e811;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.whyus-desc {
+  color: rgba(241, 232, 17, 0.5);
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.whyus-img2-badge-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+}
+
+.whyus-badge {
+  width: 100%;
+  max-width: 22vw;
+  min-width: 180px;
+  height: 3.2vw;
+  min-height: 40px;
+  border-radius: 0 0 1.5rem 1.5rem;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4caf4f;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.whyus-badge-text {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.whyus-flower-badge {
+  position: relative;
+  width: 9vw;
+  height: 9vw;
+  min-width: 120px;
+  min-height: 120px;
+  margin-top: 1vw;
+  margin-bottom: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whyus-flower-badge::before,
+.whyus-flower-badge::after {
+  content: '';
+  position: absolute;
+  width: 4.5vw;
+  height: 4.5vw;
+  min-width: 60px;
+  min-height: 60px;
+  background: #4caf4f;
+  border-radius: 50%;
+  z-index: 1;
+}
+.whyus-flower-badge::before {
+  left: 0;
+  top: 0;
+  box-shadow: 4.5vw 0 #4caf4f, 0 4.5vw #4caf4f, 4.5vw 4.5vw #4caf4f;
+}
+.whyus-flower-badge::after {
+  display: none;
+}
+.whyus-flower-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  z-index: 2;
+  line-height: 1.2;
+}
+@media (max-width: 600px) {
+  .whyus-flower-badge {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+  }
+  .whyus-flower-badge::before {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    box-shadow: 40px 0 #4caf4f, 0 40px #4caf4f, 40px 40px #4caf4f;
+  }
+}
+
+.whyus-svg-badge-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 13vw;
+  height: 13vw;
+  min-width: 120px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  margin-top: -120px;
+  margin-left: 150px;
+}
+.whyus-svg-badge {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.whyus-svg-badge-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #222;
+  font-size: 1.6vw;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  .whyus-svg-badge-wrapper {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+  }
+  .whyus-svg-badge-text {
+    font-size: 1rem;
+  }
+}
+
+.whyus-arrow-svg {
+  display: block;
+  margin: 0 1.5rem;
+  width: 64px;
+  height: 64px;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+
+
+.whyus-trace-badge-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-24deg);
+  color: #222;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.1;
+  pointer-events: none;
+  width: 100%;
+}
+
+.whyus-imgs-relative-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.whyus-trace-badge-container {
+  position: absolute;
+  left: 94%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 210px;
+  height: 210px;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.whyus-trace-badge-container:hover {
+  transform: translate(-50%, -50%) scale(1.10);
+}
+
+.whyus-trace-badge-img {
+  width: 100%;
+  height: 100%;
+}
+
+.whyus-arrow-absolute {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 77px;
+  height: 74px;
+}

@@ -1,0 +1,230 @@
+.contactus-bg {
+  min-height: 100vh;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+.contactus-card {
+  min-height: 480px;
+  background: rgba(10,10,10,0.75);
+  backdrop-filter: blur(6px);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(76,175,79,0.10), 0 1.5px 6px rgba(0,0,0,0.08);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+ 
+}
+.contactus-illustration {
+  flex: 0 0 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+.contactus-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.contactus-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+.contactus-desc {
+  color: #bdbdbd;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+.contactus-field {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+.contactus-input {
+  width: 100%;
+  padding: 1.1rem 1rem 0.5rem 1rem;
+  background: #232323;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  outline: none;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(76,175,79,0.04);
+  resize: none;
+}
+.contactus-input:focus {
+  box-shadow: 0 0 0 2px #4caf4f;
+}
+.contactus-field label {
+  position: absolute;
+  left: 1.1rem;
+  top: 1.1rem;
+  color: #bdbdbd;
+  font-size: 1.1rem;
+  pointer-events: none;
+  transition: 0.2s;
+  opacity: 0.8;
+}
+.contactus-input:focus + label,
+.contactus-field label.filled {
+  top: -0.7rem;
+  left: 0.9rem;
+  font-size: 0.95rem;
+  color: #4caf4f;
+  background: #232323;
+  padding: 0 0.3rem;
+  border-radius: 0.5rem;
+  opacity: 1;
+}
+.contactus-btn {
+  background: #4caf4f;
+  color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 12px rgba(76,175,79,0.12);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.contactus-btn:disabled {
+  background: #bdbdbd;
+  color: #232323;
+  cursor: not-allowed;
+}
+.contactus-btn:hover:not(:disabled) {
+  background: #388e3c;
+  box-shadow: 0 4px 24px rgba(76,175,79,0.18);
+}
+.contactus-lottie {
+  width: 340px;
+  height: 340px;
+}
+@media (max-width: 700px) {
+  .contactus-card {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
+  .contactus-illustration {
+    flex: none;
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+  .contactus-title {
+    font-size: 1.3rem;
+  }
+}
+.contactus-extra-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 900px;
+  margin: 2rem auto 0 auto;
+}
+.contactus-info-section, .contactus-faq-section, .contactus-newsletter-section {
+  flex: 1 1 0;
+  min-width: 0;
+  background: rgba(10,10,10,0.45);
+  backdrop-filter: blur(2px);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 2rem 2.5rem;
+  color: #fff;
+}
+.contactus-newsletter-section {
+  margin: 2.5rem auto 2.5rem auto;
+  max-width: 900px;
+}
+@media (max-width: 900px) {
+  .contactus-extra-row {
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 98vw;
+  }
+}
+.contactus-info-section h3,
+.contactus-faq-section h3,
+.contactus-newsletter-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffe066;
+}
+.contactus-info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contactus-info-section li {
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+}
+.contactus-faq-section details {
+  margin-bottom: 1rem;
+  background: rgba(30,30,30,0.18);
+  border-radius: 0.7rem;
+  padding: 0.7rem 1rem;
+  color: #fff;
+}
+.contactus-faq-section summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffe066;
+  outline: none;
+}
+.contactus-faq-section p {
+  margin: 0.5rem 0 0 0;
+  color: #e0e0e0;
+}
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.newsletter-input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  font-size: 1.1rem;
+  background: #232323;
+  color: #fff;
+}
+.newsletter-btn {
+  background: #4caf4f;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.newsletter-btn:hover {
+  background: #388e3c;
+}
+@media (max-width: 700px) {
+  .contactus-info-section, .contactus-faq-section, .contactus-newsletter-section {
+    padding: 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
+} 
