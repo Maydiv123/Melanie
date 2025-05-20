@@ -39,4 +39,25 @@
   color: #9b9744;
   font-size: 1.25rem;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90vw !important;
+    max-width: 98vw !important;
+    min-width: 0 !important;
+    margin: 0.7rem auto !important;
+    padding: 1rem !important;
+    box-sizing: border-box !important;
+  }
+  .card-title {
+    font-size: 1.1rem !important;
+  }
+  .card-description {
+    font-size: 0.95rem !important;
+  }
+  .card-icon img {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+  }
 } 

@@ -98,4 +98,32 @@
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@media (max-width: 480px) {
+  .partners-section {
+    padding: 1rem 0 !important;
+  }
+  .partners-slider {
+    padding: 4px 0 !important;
+  }
+  .partners-track {
+    gap: 14px !important;
+    flex-wrap: nowrap !important;
+  }
+  .partner-logo {
+    width: 32px !important;
+    height: auto !important;
+    max-width: 32px !important;
+    min-width: 0 !important;
+  }
+  .partner-item {
+    padding: 2px !important;
+    min-width: unset !important;
+    max-width: unset !important;
+  }
+  .partners-section h3 {
+    font-size: 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
 } 

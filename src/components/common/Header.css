@@ -19,9 +19,11 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.scrolled-header {
-  background-color: #000000 !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+header.scrolled-header {
+  background: #000 !important;
+  background-color: #000 !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5) !important;
+  transition: background-color 0.3s, box-shadow 0.3s !important;
 }
 
 .logo-container {
@@ -88,8 +90,80 @@ header {
 }
 
 @media (max-width: 480px) {
+  header {
+    background: #000 !important;
+    background-color: #000 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5) !important;
+    transition: background-color 0.3s, box-shadow 0.3s !important;
+  }
   .logo {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  .melanie-logo {
+    height: 28px;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .mobile-menu.active {
+    transform: translateX(0);
+  }
+
+  .mobile-menu .nav-link {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+
+  .mobile-menu .nav-link:hover {
+    color: #ffea00;
+  }
+
+  .close-menu-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  header.scrolled-header {
+    background: #000 !important;
+    background-color: #000 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5) !important;
+    transition: background-color 0.3s, box-shadow 0.3s !important;
   }
 }
 
@@ -109,5 +183,15 @@ header {
 @media (max-width: 480px) {
   .melanie-logo {
     height: 32px;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: flex;
   }
 } 

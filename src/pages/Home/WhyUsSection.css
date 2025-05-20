@@ -306,3 +306,104 @@
   width: 77px;
   height: 74px;
 }
+
+@media (max-width: 480px) {
+  .whyus-section {
+    padding: 2rem 0 !important;
+    margin-top: 7rem !important;
+  }
+  .whyus-container {
+    padding: 0 1rem !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+  }
+  .whyus-flex-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 0 !important;
+    width: 100vw !important;
+    min-width: 0 !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .whyus-img-merged {
+    flex: 0 0 38vw !important;
+    max-width: 38vw !important;
+    min-width: 70px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    margin: 0 !important;
+    padding: 0 !important;
+ 
+  }
+  .whyus-img {
+    width: 100% !important;
+    max-width: 120px !important;
+    min-width: 80px !important;
+    height: 160px !important;
+    border-radius: 0.7rem !important;
+    margin: 0 !important;
+    object-fit: cover !important;
+  }
+  .whyus-text-content {
+    flex: 1 1 0 !important;
+    max-width: 62vw !important;
+    min-width: 0 !important;
+    text-align: left !important;
+    padding-right: 1.2rem !important;
+    padding-left: 1.2rem !important;
+    box-sizing: border-box !important;
+  }
+  .whyus-heading {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .whyus-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.7rem !important;
+  }
+  .whyus-desc {
+    font-size: 1rem !important;
+    margin-bottom: 0.7rem !important;
+  }
+  .whyus-badge {
+    min-width: 80px !important;
+    height: 32px !important;
+    font-size: 0.95rem !important;
+    border-radius: 0.7rem !important;
+  }
+  .whyus-badge-text {
+    font-size: 0.95rem !important;
+  }
+  .whyus-flower-badge, .whyus-svg-badge-wrapper {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    min-height: 60px !important;
+    margin-top: 0.5rem !important;
+    margin-left: 0 !important;
+  }
+  .whyus-flower-text, .whyus-svg-badge-text {
+    font-size: 0.8rem !important;
+  }
+  .whyus-arrow-svg, .whyus-arrow-absolute {
+    width: 32px !important;
+    height: 32px !important;
+    margin: 0.5rem auto !important;
+  }
+  .whyus-trace-badge-container {
+    width: 60px !important;
+    height: 60px !important;
+    left: auto !important;
+    right: -1rem !important;
+    top: 45% !important;
+    transform: translateY(0) !important;
+    z-index: 3;
+  }
+  .whyus-trace-badge-text {
+    font-size: 0.7rem !important;
+  }
+}

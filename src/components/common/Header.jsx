@@ -5,6 +5,7 @@ import MelanieLogo from '../../assets/MelanieLogo.png';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,12 +42,20 @@ const Header = () => {
             Contact us
           </Link>
         </nav>
-        <button className="md:hidden text-[#ffea00]">
+        <button className="md:hidden text-[#ffea00]" onClick={() => setMenuOpen(true)} aria-label="Open menu">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
+      {/* Mobile Menu */}
+      <nav className={`mobile-menu${menuOpen ? ' active' : ''}`}> 
+        <button className="close-menu-btn" onClick={() => setMenuOpen(false)} aria-label="Close menu">×</button>
+        <Link className="nav-link" to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link className="nav-link" to="/about" onClick={() => setMenuOpen(false)}>About Us</Link>
+        <Link className="nav-link" to="/products" onClick={() => setMenuOpen(false)}>Our Product</Link>
+        <Link className="nav-link" to="/contact" onClick={() => setMenuOpen(false)}>Contact Us</Link>
+      </nav>
     </header>
   );
 };

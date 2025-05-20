@@ -227,4 +227,116 @@
     padding: 1.2rem 0.7rem;
     max-width: 98vw;
   }
+}
+@media (max-width: 480px) {
+  .contactus-bg {
+    padding: 1rem 0.2rem !important;
+    min-height: 100vh !important;
+  }
+  .contactus-card {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 1rem 0.3rem 1rem 0.3rem !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 2px 8px rgba(76,175,79,0.10), 0 1px 3px rgba(0,0,0,0.08) !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    gap: 0.7rem !important;
+  }
+  .contactus-illustration {
+    width: 100% !important;
+    max-width: 180px !important;
+    margin: 0 auto 1rem auto !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .contactus-form {
+    gap: 0.5rem !important;
+  }
+  .contactus-title {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.3rem !important;
+    text-align: left !important;
+  }
+  .contactus-desc {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.5rem !important;
+    text-align: left !important;
+  }
+  .contactus-field {
+    margin-bottom: 0.7rem !important;
+  }
+  .contactus-input {
+    font-size: 1rem !important;
+    padding: 0.8rem 0.7rem 0.5rem 0.7rem !important;
+    border-radius: 0.7rem !important;
+  }
+  .contactus-btn {
+    width: 100% !important;
+    font-size: 1rem !important;
+    padding: 0.8rem 0 !important;
+    margin-top: 0.3rem !important;
+    border-radius: 0.7rem !important;
+  }
+  .contactus-lottie {
+    width: 120px !important;
+    height: 120px !important;
+    margin: 0 auto 1rem auto !important;
+  }
+  .contactus-extra-row {
+    flex-direction: column !important;
+    gap: 0.7rem !important;
+    max-width: 100vw !important;
+    margin: 1rem 0 0 0 !important;
+  }
+  .contactus-info-section, .contactus-faq-section, .contactus-newsletter-section {
+    padding: 1rem 0.3rem !important;
+    border-radius: 1rem !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    font-size: 0.98rem !important;
+  }
+  .contactus-info-section h3,
+  .contactus-faq-section h3,
+  .contactus-newsletter-section h3 {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.7rem !important;
+  }
+  .newsletter-form {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    align-items: stretch !important;
+    width: 100% !important;
+  }
+  .newsletter-input, .newsletter-btn {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    font-size: 1rem !important;
+  }
+  .newsletter-btn {
+    margin-top: 0.2rem !important;
+    font-size: 1rem !important;
+    padding: 0.8rem 0 !important;
+    border-radius: 0.7rem !important;
+  }
+  .contactus-faq-section details {
+    padding: 0.5rem 0.5rem !important;
+    font-size: 0.95rem !important;
+  }
+  .contactus-faq-section summary {
+    font-size: 1rem !important;
+  }
+  .banner-bg-video, .contactus-bg video, .contactus-bg .bg-video {
+    width: 100vw !important;
+    min-width: 100vw !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    object-fit: cover !important;
+    left: 0 !important;
+    top: 0 !important;
+    position: fixed !important;
+    z-index: -1 !important;
+  }
 } 

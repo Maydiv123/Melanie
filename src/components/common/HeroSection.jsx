@@ -85,7 +85,7 @@ const HeroSection = () => {
       <div className="main-content">
         <div className="content-container">
           <p className="iam-text">I AM</p>
-          <div className="flex justify-center items-center">
+          <div className="life-row">
             {word.split('').map((char, letterIdx) => {
               const grid = PIXEL_FONT[char];
               let dotIdx = 0;
@@ -95,16 +95,22 @@ const HeroSection = () => {
                     row.split('').map((cell, colIdx) => {
                       if (cell === '1') {
                         const origin = dotOrigins[letterIdx][dotIdx];
-                        const left = colIdx * (DOT_SIZE + DOT_GAP);
-                        const top = rowIdx * (DOT_SIZE + DOT_GAP);
+                        let left, top;
+                        if (assembled) {
+                          left = colIdx * (DOT_SIZE + DOT_GAP);
+                          top = rowIdx * (DOT_SIZE + DOT_GAP);
+                        } else {
+                          left = `${origin.x}vw`;
+                          top = `${origin.y}vh`;
+                        }
                         dotIdx++;
                         return (
                           <span
                             key={colIdx + '-' + rowIdx}
                             className="dot"
                             style={{
-                              left: assembled ? left : `${origin.x}vw`,
-                              top: assembled ? top : `${origin.y}vh`,
+                              left,
+                              top,
                               transition: `all 1s cubic-bezier(.68,-0.55,.27,1.55) ${(rowIdx + colIdx) * 0.04 + letterIdx * 0.1}s`
                             }}
                           />
