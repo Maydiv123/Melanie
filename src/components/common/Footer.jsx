@@ -18,34 +18,6 @@ const Footer = () => {
           </p>
         </div>
         
-        {/* Browse Section */}
-        <div className="section">
-          <h3 className="section-title">Browse</h3>
-          <ul className="link-list">
-            {['Clothings', 'Electronics', 'Books', 'Furnitures', 'Decorations', 'Sports Equipment'].map((item) => (
-              <li key={item}>
-                <Link to="#" className="link">
-                  {item}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        
-        {/* General Section */}
-        <div className="section">
-          <h3 className="section-title">General</h3>
-          <ul className="link-list">
-            {['Careers', 'About', 'Twitter', 'LinkedIn'].map((item) => (
-              <li key={item}>
-                <Link to="#" className="link">
-                  {item}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        
         {/* Support Section */}
         <div className="section">
           <h3 className="section-title">Support</h3>

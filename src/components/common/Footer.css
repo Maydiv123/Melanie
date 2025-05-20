@@ -30,37 +30,40 @@
   .footer {
     padding: 2rem 0;
   }
-
   .footer-container {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    text-align: center;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 2rem !important;
+    padding: 1rem 0.5rem !important;
+    overflow-x: auto !important;
+    width: 100vw !important;
+    box-sizing: border-box !important;
   }
-
-  .brand-title {
-    font-size: 1.8rem;
+  .footer .section, .footer .brand-section {
+    min-width: 160px !important;
+    max-width: 200px !important;
+    flex: 0 0 160px !important;
+    margin: 0 !important;
+    padding: 0.5rem !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
   }
-
-  .copyright {
-    font-size: 0.9rem;
+  .footer .section-title, .footer .brand-title {
+    font-size: 1rem !important;
+    margin-bottom: 0.5rem !important;
   }
-
-  .section-title {
-    font-size: 1.1rem;
-    margin-top: 1rem;
+  .footer .link-list {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+    font-size: 0.95rem !important;
   }
-
-  .link {
-    font-size: 1rem;
-  }
-
-  .footer-logo {
-    height: 36px;
-    margin: 0 auto 1rem auto;
-  }
-
-  .link-list {
-    align-items: center;
+  .footer .copyright {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.7rem !important;
   }
 }
 

@@ -112,9 +112,9 @@
     flex-wrap: nowrap !important;
   }
   .partner-logo {
-    width: 32px !important;
+    width: 75px !important;
     height: auto !important;
-    max-width: 32px !important;
+    max-width: 75px !important;
     min-width: 0 !important;
   }
   .partner-item {
