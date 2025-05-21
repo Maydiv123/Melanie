@@ -32,34 +32,31 @@
   }
   .footer-container {
     display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
     justify-content: flex-start !important;
-    align-items: flex-start !important;
-    gap: 2rem !important;
+    align-items: stretch !important;
+    gap: 0.5rem !important;
     padding: 1rem 0.5rem !important;
-    overflow-x: auto !important;
     width: 100vw !important;
     box-sizing: border-box !important;
   }
   .footer .section, .footer .brand-section {
-    min-width: 160px !important;
-    max-width: 200px !important;
-    flex: 0 0 160px !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    flex: 1 1 100% !important;
     margin: 0 !important;
-    padding: 0.5rem !important;
+    padding: 0.5rem 0 !important;
     text-align: left !important;
     box-sizing: border-box !important;
+    word-break: break-word !important;
   }
   .footer .section-title, .footer .brand-title {
     font-size: 1rem !important;
     margin-bottom: 0.5rem !important;
   }
   .footer .link-list {
-    padding: 0 !important;
-    margin: 0 !important;
-    list-style: none !important;
-    font-size: 0.95rem !important;
+    word-break: break-word !important;
   }
   .footer .copyright {
     font-size: 0.9rem !important;
