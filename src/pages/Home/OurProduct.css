@@ -665,7 +665,7 @@
 @media (max-width: 768px) {
   .product-section-dark {
     padding: 0px;
-  }
+  }image.png
   
   .product-grid-dark {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

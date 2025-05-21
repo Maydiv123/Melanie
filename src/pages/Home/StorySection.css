@@ -36,7 +36,7 @@
 }
 .story-desc {
   color: rgba(241, 232, 17, 0.5);
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.7;
   margin-bottom: 1.2rem;
 }
@@ -44,11 +44,12 @@
   position: relative;
 }
 .story-main-img {
-  width: 100%;
-  height: auto;
+  width: 70%;
+  height: 500px;
   border-radius: 78px;
   object-fit: cover;
   transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
+  margin-left: 200px;
 }
 
 .story-main-img:hover {
@@ -74,6 +75,7 @@
 .story-badge-img {
   width: 13rem;
   height: 13rem;
+  margin-left: 240px;
 }
 .story-badge-text {
   position: absolute;
@@ -85,6 +87,7 @@
   font-weight: 400;
   text-align: center;
   line-height: 1.2;
+  margin-left: 120px;
 }
 
 .story-read-more-btn {
@@ -187,5 +190,8 @@
   .story-read-more-btn {
     font-size: 0.85rem !important;
     padding: 0.2rem 0.8rem !important;
+  }
+  .story-badge-inner {
+      margin-right: 700px;
   }
 } 

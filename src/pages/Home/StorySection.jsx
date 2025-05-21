@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './StorySection.css';
 
 const StorySection = () => {
   const [showFull, setShowFull] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const fullText = `Our journey began with a shared concern for the excessive use of plastic in food takeaway packaging. Witnessing the environmental impact of single-use plastics motivated us to take action. Our founders saw an opportunity to create positive change by providing sustainable alternatives for businesses and individuals who shared our passion for a greener planet.`;
   const shortText = fullText.split('. ').slice(0, 2).join('. ') + '.';
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <section className="story-section">
       <div className="story-container">
@@ -15,11 +26,16 @@ const StorySection = () => {
               Our Journey Towards Sustainability
             </h2>
             <p className="story-desc">
-              {showFull ? fullText : shortText}
+              {isMobile ? (showFull ? fullText : shortText) : fullText}
             </p>
-            {!showFull && (
+            {isMobile && !showFull && (
               <button className="story-read-more-btn" onClick={() => setShowFull(true)}>
                 Read More
+              </button>
+            )}
+            {isMobile && showFull && (
+              <button className="story-read-more-btn" onClick={() => setShowFull(false)}>
+                Read Less
               </button>
             )}
           </div>
