@@ -5,7 +5,7 @@ import HeroSection from '../../components/common/HeroSection';
 import PartnersSection from './PartnersSection';
 import FeaturesSection from './FeaturesSection';
 import StorySection from './StorySection';
-import WhyUsSection from './WhyUsSection';
+
 import ProductsSection from './ProductsSection';
 import CtaSection from './CtaSection';
 
@@ -27,7 +27,7 @@ const HomePage = () => {
         <PartnersSection />
         <FeaturesSection />
         <StorySection />
-        <WhyUsSection />
+       
         <ProductsSection />
         <CtaSection />
       </main>

@@ -6,7 +6,7 @@ import InstaIcon from '../../assets/Insta.png';
 import Lottie from 'lottie-react';
 import ScrollLottie from '../../assets/Scroll.json';
 
-const word = "LIFE";
+const word = "MELANIE";
 const DOT_SIZE = 16;
 const DOT_GAP = 5;
 const GRID_ROWS = 8;
@@ -14,17 +14,65 @@ const GRID_COLS = 6;
 
 // Simple pixel font for A-Z (6x8 grid, 1=dot, 0=empty)
 const PIXEL_FONT = {
-  L: [
-    '100000', '100000', '100000', '100000', '100000', '100000', '100000', '111111'
-  ],
-  I: [
-    '001000', '001000', '001000', '001000', '001000', '001000', '001000', '001000'
-  ],
-  F: [
-    '111111', '100000', '100000', '111110', '100000', '100000', '100000', '100000'
+  M: [
+    '100001',
+    '110011',
+    '101101',
+    '100001',
+    '100001',
+    '100001',
+    '100001',
+    '100001',
   ],
   E: [
-    '111111', '100000', '100000', '111110', '100000', '100000', '100000', '111111'
+    '111111',
+    '100000',
+    '100000',
+    '111110',
+    '100000',
+    '100000',
+    '100000',
+    '111111',
+  ],
+  L: [
+    '100000',
+    '100000',
+    '100000',
+    '100000',
+    '100000',
+    '100000',
+    '100000',
+    '111111',
+  ],
+  A: [
+    '011110',
+    '100001',
+    '100001',
+    '100001',
+    '111111',
+    '100001',
+    '100001',
+    '100001',
+  ],
+  N: [
+    '100001',
+    '110001',
+    '101001',
+    '100101',
+    '100011',
+    '100001',
+    '100001',
+    '100001',
+  ],
+  I: [
+    '001000',
+    '001000',
+    '001000',
+    '001000',
+    '001000',
+    '001000',
+    '001000',
+    '001000',
   ],
 };
 
@@ -85,6 +133,7 @@ const HeroSection = () => {
       <div className="main-content">
         <div className="content-container">
           <p className="iam-text">I AM</p>
+          <br />
           <div className="life-row">
             {word.split('').map((char, letterIdx) => {
               const grid = PIXEL_FONT[char];
@@ -125,8 +174,9 @@ const HeroSection = () => {
           </div>
           <div className="environmentalist-text">
             <p>
-              AN<br />
-              Environmentalist
+              <br />
+              <span className="your-text">Your</span>
+              Personal Hygiene Partner
             </p>
           </div>
         </div>

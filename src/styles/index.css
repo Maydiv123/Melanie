@@ -1,12 +1,13 @@
 @import './tailwind.css';
 
 /* Global styles */
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
@@ -20,11 +21,6 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 ::-webkit-scrollbar {

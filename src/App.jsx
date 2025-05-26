@@ -5,10 +5,12 @@ import ProductsSection from './pages/Home/OurProduct';
 import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
 import ProductDetails from './pages/ProductDetails';
+import ScrollToTop from './components/common/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductsSection />} />

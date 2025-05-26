@@ -195,4 +195,16 @@ header.scrolled-header {
   .mobile-menu {
     display: flex;
   }
+}
+
+nav a, .nav-links a, .navbar a {
+  font-size: 1rem !important;
+  padding: 0.2rem 0.7rem !important;
+}
+
+@media (max-width: 768px) {
+  nav a, .nav-links a, .navbar a {
+    font-size: 0.9rem !important;
+    padding: 0.15rem 0.5rem !important;
+  }
 } 

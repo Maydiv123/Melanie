@@ -23,20 +23,20 @@
 }
 .story-heading {
   color: #f1e811;
-  font-size: 2.25rem;
+  font-size: 2.1rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
 .story-title {
   color: #f1e811;
-  font-size: 4rem;
+  font-size: 2.9rem;
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: 2.5rem;
 }
 .story-desc {
   color: rgba(241, 232, 17, 0.5);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 1.2rem;
 }
@@ -50,6 +50,7 @@
   object-fit: cover;
   transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
   margin-left: 200px;
+  margin-top: 100px;
 }
 
 .story-main-img:hover {
@@ -76,6 +77,7 @@
   width: 13rem;
   height: 13rem;
   margin-left: 240px;
+  margin-top: 100px;
 }
 .story-badge-text {
   position: absolute;
