@@ -533,23 +533,26 @@
     justify-content: flex-start !important;
     margin-bottom: 1.2rem !important;
     padding: 0 !important;
+   
   }
   .product-details-advanced-image-wrapper {
-    min-width: 40vw !important;
+    min-width: 28vw !important;
     max-width: 48vw !important;
     margin: 0 !important;
     justify-content: flex-start !important;
     align-items: flex-start !important;
+    
   }
   .product-details-advanced-image {
     max-width: 100% !important;
     height: 120px !important;
     border-radius: 1.2rem !important;
     object-fit: cover !important;
+    margin-top: -24px;
   }
   .glass-card {
     min-width: 49vw !important;
-    max-width: 14vw !important;
+    max-width: 49vw !important;
     padding: 0.5rem 0.5rem 0.5rem 0.7rem !important;
     margin: 0 !important;
     border-radius: 1.2rem !important;
@@ -560,10 +563,11 @@
     flex-direction: column !important;
     align-items: flex-start !important;
     justify-content: flex-start !important;
-    margin-top: -400px !important;
+    margin-top: -380px !important;
+    
 
    
-    margin-left: 190px !important;
+    margin-left: 170px !important;
   }
   .product-details-advanced-title {
     font-size: 1.3rem !important;
@@ -658,6 +662,9 @@
     box-sizing: border-box !important;
     padding: 0.5rem 0.2rem 0 0.2rem !important;
     border-bottom: 2px solid #2d2d2d !important;
+   
+    
+   
   }
   .product-details-tab {
     flex: 0 0 auto !important;
@@ -683,6 +690,10 @@
     border-radius: 0.7rem !important;
     box-sizing: border-box !important;
     overflow: hidden !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
   .product-details-tab-content {
     width: 100vw !important;
@@ -692,5 +703,6 @@
     box-sizing: border-box !important;
     font-size: 0.98rem !important;
     border-radius: 0 0 0.7rem 0.7rem !important;
+    margin-left: 100px;
   }
 } 

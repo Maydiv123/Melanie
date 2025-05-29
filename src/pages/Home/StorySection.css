@@ -185,6 +185,7 @@
     height: 3.5rem !important;
     max-width: 3.5rem !important;
     max-height: 3.5rem !important;
+    margin-bottom: 300px;
   }
   .story-badge-text {
     font-size: 0.7rem !important;

@@ -18,10 +18,6 @@ const ProductDetails = () => {
   const product = location.state?.product;
   const [activeTab, setActiveTab] = useState('Description');
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   if (!product) {
     return (
       <div className="product-details-empty">
