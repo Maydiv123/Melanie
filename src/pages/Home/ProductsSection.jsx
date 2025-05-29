@@ -14,7 +14,7 @@ const ProductsSection = () => {
     {
       id: 2,
       name: 'Tissue Wipes',
-      image: '/images/img_rectangle_17_453x476.png',
+      image: '/images/img_image_768x325.png',
       link: '/products/tissue-wipes'
     },
     {

@@ -7,7 +7,7 @@ const CtaSection = () => {
     <section className="cta-section">
       {/* Top wave decoration */}
       <div className="cta-top-wave">
-        <img src="/images/img_frame_34.svg" alt="Top wave decoration" className="cta-wave-img" />
+        <img src="/images/img_image_768x325.png" alt="Top wave decoration" className="cta-wave-img" />
       </div>
       
       {/* Main content */}

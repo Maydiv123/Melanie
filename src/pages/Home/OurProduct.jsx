@@ -219,7 +219,7 @@ const ProductsSection = () => {
                   alt={product.name}
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = "https://placehold.co/200x200/ffffff/333333?text=Product";
+                    e.target.src = "public/images/img_image_768x325.png";
                   }}
                   loading="lazy"
                 />
@@ -236,33 +236,7 @@ const ProductsSection = () => {
           ))}
         </div>
 
-        {/* Second row of products */}
-        <div className="product-grid-dark">
-          {productsData.slice(2, 6).map((product) => (
-            <div className="product-card-dark" key={product.id}>
-              <div className="product-image-container">
-                <img 
-                  className="product-image-dark" 
-                  src={product.image} 
-                  alt={product.name}
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = "https://placehold.co/200x200/ffffff/333333?text=Product";
-                  }}
-                  loading="lazy"
-                />
-              </div>
-              <div className="product-card-actions">
-                <button
-                  className="shop-now-btn"
-                  onClick={() => navigate(`/product/${product.id}`, { state: { product } })}
-                >
-                  View-Details
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
+       
 
         {/* Mid-Section: Two Cards Side by Side, edge-to-edge images, overlays */}
         <div className="product-mid-row exact-match">
@@ -271,7 +245,7 @@ const ProductsSection = () => {
             ref={promoRef}
             className={`mid-card promo-mid-card exact-match-promo${promoZoom ? ' zoom-animate' : ''}${promoInView ? ' card-in-view' : ''}`}
             style={{
-              backgroundImage: `url('/images/img_rectangle_17_453x476.png')`,
+              backgroundImage: `url('public/images/img_image_768x325.png')`,
               backgroundPosition: `${50 + parallax.x}% ${50 + parallax.y}%`,
             }}
             onMouseMove={handlePromoMouseMove}
@@ -310,34 +284,6 @@ const ProductsSection = () => {
           </div>
         </div>
 
-        {/* Most Bought Section */}
-        <h2 className="product-section-title">Most Bought</h2>
-        <div className="product-grid-dark">
-          {productsData.slice(2, 6).map((product) => (
-            <div className="product-card-dark" key={product.id}>
-              <div className="product-image-container">
-                <img 
-                  className="product-image-dark" 
-                  src={product.image} 
-                  alt={product.name}
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = "https://placehold.co/200x200/ffffff/333333?text=Product";
-                  }}
-                  loading="lazy"
-                />
-              </div>
-              <div className="product-card-actions">
-                <button
-                  className="shop-now-btn"
-                  onClick={() => navigate(`/product/${product.id}`, { state: { product } })}
-                >
-                  View-Details
-                </button>
-              </div>
-            </div>
-        ))}
-      </div>
 
         {/* Modern Info Bar */}
         <div className="modern-info-bar">

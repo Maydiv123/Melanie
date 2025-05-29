@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './ProductDetails.css';
 import Header from '../components/common/Header';
@@ -18,6 +18,10 @@ const ProductDetails = () => {
   const product = location.state?.product;
   const [activeTab, setActiveTab] = useState('Description');
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   if (!product) {
     return (
       <div className="product-details-empty">
@@ -30,7 +34,7 @@ const ProductDetails = () => {
   // Find related products (same category, not current product, max 4)
   const relatedProducts = productsData
     .filter((p) => p.category === product.category && p.id !== product.id)
-    .slice(0, 4);
+    .slice(0, 3);
 
   // Example highlights (could be dynamic)
   const highlights = [
@@ -57,17 +61,6 @@ const ProductDetails = () => {
           <div className="product-details-gallery-wrapper">
             <div className="product-details-advanced-image-wrapper">
               <img className="product-details-advanced-image" src={mainImage} alt={product.name} />
-            </div>
-            <div className="product-details-thumbnails">
-              {images.map((img, idx) => (
-                <div
-                  key={idx}
-                  className={`product-details-thumbnail-frame${mainImage === img ? ' active' : ''}`}
-                  onClick={() => setMainImage(img)}
-                >
-                  <img src={img} alt={`Thumbnail ${idx + 1}`} className="product-details-thumbnail" />
-                </div>
-              ))}
             </div>
           </div>
           <div className="product-details-advanced-info glass-card">
