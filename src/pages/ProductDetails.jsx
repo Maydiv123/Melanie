@@ -9,7 +9,7 @@ const features = [
   { icon: '🌱', label: 'Eco-Friendly' },
   { icon: '🧻', label: 'Ultra Soft' },
   { icon: '🚚', label: 'Fast Delivery' },
-  { icon: '💧', label: 'Absorbent' },
+ 
 ];
 
 const ProductDetails = () => {
