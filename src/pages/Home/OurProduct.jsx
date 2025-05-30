@@ -70,6 +70,8 @@ const ProductsSection = () => {
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
   const [showPromoText, setShowPromoText] = useState(false);
   const [activeFilter, setActiveFilter] = useState('All');
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const speechRef = useRef(null);
   const navigate = useNavigate();
 
   const handleMouseEnter = () => {
@@ -143,6 +145,12 @@ const ProductsSection = () => {
     };
   }, []);
 
+  useEffect(() => {
+    return () => {
+      window.speechSynthesis.cancel();
+    };
+  }, []);
+
   return (
     <>
       <Header />
@@ -162,10 +170,24 @@ const ProductsSection = () => {
             <img src={Star} className="tissue-svg tissue2" alt="" />
           </div>
           <div className="banner-content video-banner-content advanced-hero-content">
-            <button className="voice-btn" onClick={() => {
-              const msg = new window.SpeechSynthesisUtterance('Redefining Softness. Elevating Hygiene. Discover our ultra-soft, ultra-strong tissue papers, crafted for those who value comfort, care, and sustainability. Perfect for every moment, from home to travel.');
-              window.speechSynthesis.speak(msg);
-            }} title="Listen to this section">🔊</button>
+            <button
+              className="voice-btn"
+              onClick={() => {
+                if (isSpeaking) {
+                  window.speechSynthesis.cancel();
+                  setIsSpeaking(false);
+                } else {
+                  const msg = new window.SpeechSynthesisUtterance('Redefining Softness. Elevating Hygiene. Discover our ultra-soft, ultra-strong tissue papers, crafted for those who value comfort, care, and sustainability. Perfect for every moment, from home to travel.');
+                  msg.onend = () => setIsSpeaking(false);
+                  speechRef.current = msg;
+                  window.speechSynthesis.speak(msg);
+                  setIsSpeaking(true);
+                }
+              }}
+              title={isSpeaking ? "Mute/Stop" : "Listen to this section"}
+            >
+              {isSpeaking ? "🔇" : "🔊"}
+            </button>
             <h3 className="banner-title-advanced">
               <span className="sparkle-icon">✨</span>
               Redefining Softness. Elevating Hygiene.
