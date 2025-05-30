@@ -267,7 +267,7 @@ const ProductsSection = () => {
             ref={promoRef}
             className={`mid-card promo-mid-card exact-match-promo${promoZoom ? ' zoom-animate' : ''}${promoInView ? ' card-in-view' : ''}`}
             style={{
-              backgroundImage: `url('public/images/img_rectangle_17_1.png')`,
+              backgroundImage: `url('public/images/img_image_768x412.png')`,
               backgroundPosition: `${50 + parallax.x}% ${50 + parallax.y}%`,
             }}
             onMouseMove={handlePromoMouseMove}
