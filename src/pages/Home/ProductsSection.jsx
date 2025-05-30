@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './ProductsSection.css';
 
 
 const ProductsSection = () => {
+  const navigate = useNavigate();
   const products = [
     {
       id: 1,
@@ -46,9 +47,13 @@ const ProductsSection = () => {
                 />
                 <div className="products-card-bottom-row">
                   <h3 className="products-card-title">{product.name}</h3>
-                  <Link to={product.link} className="products-card-link">
+                  <button
+                    className="products-card-link"
+                    style={{ background: '#ffea00', border: '2px solid #000', borderRadius: '9999px', width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '1rem', cursor: 'pointer', padding: 0 }}
+                    onClick={() => navigate(`/products`)}
+                  >
                     <img src="/images/img_arrowright.svg" alt="View product" className="products-card-link-arrow" />
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>

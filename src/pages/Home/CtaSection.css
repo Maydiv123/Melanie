@@ -82,4 +82,14 @@
     font-size: 1rem !important;
     padding: 0.8rem 0 !important;
   }
+  .cta-wave-img-2 {
+    height: 150px !important;
+  }
+  .cta-wave-img {
+    height: 150px !important;
+  }
+  .cta-btn-row{
+    width: 140px;
+    margin-left: 124px;
+  }
 } 

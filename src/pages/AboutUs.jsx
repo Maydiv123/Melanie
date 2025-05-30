@@ -6,29 +6,30 @@ import aboutLottie from '../assets/About.json';
 import './AboutUs.css';
 
 const SKILLS = [
-  { label: 'Video Editing', value: 85 },
-  { label: 'Videography', value: 90 },
-  { label: 'Branding', value: 77 },
+  { label: 'Sustainable Sourcing', value: 98 },
+  { label: 'Eco-Conscious Branding', value: 94 },
+  { label: 'Packaging Design', value: 90 },
 ];
 
 const STATS = [
-  { label: 'Year Of Experience', value: 20, start: 4, suffix: '+' },
-  { label: 'Project Done', value: 1000, start: 70, suffix: '+' },
-  { label: 'Satisfied Client', value: 300, start: 70, suffix: '+' },
-  { label: 'Certified Award', value: 64, start: 0, suffix: '' },
+  { label: 'Years of Industry Experience', value: 20, start: 4, suffix: '+' },
+  { label: 'Products Delivered', value: 1000, start: 70, suffix: '+' },
+  { label: 'Happy Clients', value: 300, start: 70, suffix: '+' },
+  { label: 'Recognitions & Certifications', value: 64, start: 0, suffix: '' },
 ];
 
 const TESTIMONIALS = [
   {
-    text: "Good service. The process was well defined & communication is clear. I give my best for soleproprietorship registration in a day. They assist in selecting the right category and all details are correct before submission. Thank you Ebizfiling service.",
+    text: "Great service. The ordering process was smooth, and communication was clear throughout. I received my bulk tissue order quickly and exactly as promised. The team helped me choose the right product type for my store, and everything was verified before dispatch.",
     author: "Jhana Shree"
   },
   {
-    text: "Ebizfiling's services and customer relationship is great. The team (Chintan, Kinjal, Shaifali, Divya, Deepak, Aman, Parth, Prashanth) is very cooperative and has patience to explain in detail. Their followup and timely support in Tax filing, TDS and GST are helped us.",
+    text: "The quality of both the product and service from Melanie has been exceptional. Their team is incredibly supportive — always ready to explain, assist, and ensure smooth deliver.Special thanks to the team for being so responsive and committed to eco-conscious excellence.",
     author: "Swathi Pvt"
   },
   {
-    text: "I am pleased with the DIR 3 KYC renewal. Fantastic support from the moment I contacted their service, the team was very proactive in reaching out to me and one after another. The support by the team in a timely manner was as we needed. Kudos. Keep up the good work!",
+    text: 
+"I'm really pleased with the entire experience. From the moment I reached out, the team was proactive and supportive. They guided me through product selection, ensured all details were correct, and delivered everything on time.",
     author: "Arun"
   }
 ];
@@ -167,14 +168,14 @@ const AboutUs = () => {
           <div className="aboutus-content-col">
             <h3 className="aboutus-section-title">About Us</h3>
             <h2 className="aboutus-heading">We Always Make The Best</h2>
-            <p className="aboutus-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id odio placerat, convallis neque quis, interdum leo. Nam hendrerit urna nibh, eget sagittis erat varius non. Duis ut varius augue. Donec tincidunt iaculis ligula, et maximus elit tincidunt eu.</p>
+            <p className="aboutus-desc">From sourcing responsibly to crafting ultra-soft, skin-friendly tissue products, we never cut corners. Our commitment to quality, sustainability, and comfort is at the heart of everything we do. Whether it’s for your home, business, or on the go — every sheet we make reflects care, responsibility, and a promise to the planet.</p>
             <button className="aboutus-contact-btn">Contact Us</button>
           </div>
         </div>
         <div className="aboutus-skills-section" ref={skillsRef}>
           <div className="aboutus-skills-col">
             <h3>Our Skills</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <p>We blend creativity, sustainability, and strategy to build a brand that’s as clean and impactful as the product itself</p>
             {SKILLS.map((skill, idx) => (
               <div className="aboutus-skill" key={skill.label}>
                 <span>{skill.label}</span>

@@ -720,6 +720,7 @@
     
     
   }
+ 
   .product-card-dark {
     flex: 0 0 80vw !important;
     width: 80vw !important;
@@ -1370,6 +1371,9 @@
     opacity: 1 !important;
     display: block !important;
     
+  }
+  .product-section-title {
+    margin-top: 2rem !important;
   }
   .video-banner-content, .banner-content.advanced-hero-content {
     position: relative !important;

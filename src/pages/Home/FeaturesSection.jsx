@@ -6,27 +6,27 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: '/images/img_icons.svg',
-      title: 'Unbreakable Security',
-      description: 'Lockdown exams with advanced security measures to prevent cheating.'
+      title: 'Unbreakable Softness',
+      description: 'Built to Care, Made to Last'
     },
     {
       icon: '/images/img_icons_97x97.svg',
-      title: 'AI Proctoring Assistant',
-      description: 'Our AI monitors exams, freeing up human proctors for focused attention.'
+      title: 'Smarter Proctoring Starts Here',
+      description: 'We Take Care of the Routine, Sustainably'
     },
     {
       icon: '/images/img_icons_1.svg',
-      title: 'Post-Exam Scrutiny',
-      description: 'Go beyond the exam with post-analysis to ensure academic integrity.'
+      title: 'Post-Use Purity',
+      description: 'Because Clean Doesn’t End with a Wipe'
     }
   ];
 
   return (
     <section className="features-section">
       <div className="features-container">
-        <h2 className="features-title">Embark on Your Green Journey</h2>
+        <h2 className="features-title">Gentle on You, Kind to Earth</h2>
         <p className="features-desc">
-          Advanced AI-Powered Proctoring Solutions for Unmatched Exam Integrity.
+        Experience the Future of Examination Integrity with Advanced AI-Powered Proctoring
         </p>
         <div className="features-grid">
           {features.map((feature, index) => (
