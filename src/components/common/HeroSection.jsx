@@ -7,10 +7,12 @@ import Lottie from 'lottie-react';
 import ScrollLottie from '../../assets/Scroll.json';
 
 const word = "MELANIE";
-const DOT_SIZE = 16;
-const DOT_GAP = 5;
+const DOT_SIZE = window.innerWidth <= 480 ? 4 : 8;
+const DOT_GAP = window.innerWidth <= 480 ? 2 : 4;
 const GRID_ROWS = 8;
 const GRID_COLS = 6;
+const LETTER_SIZE = window.innerWidth <= 480 ? 40 : 80;
+const LETTER_GAP = window.innerWidth <= 480 ? 8 : 16;
 
 // Simple pixel font for A-Z (6x8 grid, 1=dot, 0=empty)
 const PIXEL_FONT = {
@@ -160,6 +162,8 @@ const HeroSection = () => {
                             style={{
                               left,
                               top,
+                              width: `${DOT_SIZE}px`,
+                              height: `${DOT_SIZE}px`,
                               transition: `all 1s cubic-bezier(.68,-0.55,.27,1.55) ${(rowIdx + colIdx) * 0.04 + letterIdx * 0.1}s`
                             }}
                           />
