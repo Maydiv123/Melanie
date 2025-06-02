@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import './PartnersSection.css';
 
 const partners = [
@@ -51,11 +51,11 @@ const PartnersSection = () => {
   return (
     <section className="partners-section">
       <div className="container mx-auto px-5">
-        {/* Small heading */}
-        <h3 className="text-[#ffea00] text-3xl font-bold text-center mb-8">Our Partners</h3>
+        
+        /*<h3 className="text-[#ffea00] text-3xl font-bold text-center mb-8">Our Partners</h3>
 
-        {/* Slider container */}
-        <div 
+       
+       /* <div 
           className={`partners-slider ${isPaused ? 'paused' : ''}`}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -81,4 +81,4 @@ const PartnersSection = () => {
   );
 };
 
-export default PartnersSection;
+export default PartnersSection;*/
