@@ -125,9 +125,9 @@ const ContactUs = () => {
           <div className="contactus-info-section">
             <h3>Contact Information</h3>
             <ul>
-              <li><strong>Phone:</strong> +91 98765 43210</li>
-              <li><strong>Email:</strong> info@melanie.com</li>
-              <li><strong>Address:</strong> 123 Green Street, New Delhi, India</li>
+              <li><strong>Phone:</strong> +91 7317228662</li>
+              <li><strong>Email:</strong> akanksha.kukreti@mekanieindia.com</li>
+              <li><strong>Address:</strong> SCO 30, 2nd Floor, Omaxe World Street, Sector-79, Greater Faridabad, Haryana - 121006</li>
             </ul>
           </div>
           <div className="contactus-faq-section">
