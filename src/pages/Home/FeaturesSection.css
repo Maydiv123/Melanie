@@ -94,10 +94,12 @@
   }
   .card {
     flex: 0 0 80vw !important;
-    width: 80vw !important;
-    max-width: 85vw !important;
-    min-width: 220px !important;
+    width: 10vw !important;
+    max-width: 50vw !important;
+    min-width: 70px !important;
     margin: 0 !important;
     scroll-snap-align: start;
+    height: 200px !important;
+
   }
 } 

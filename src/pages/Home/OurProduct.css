@@ -1336,6 +1336,10 @@
     align-items: center !important;
     margin: 0 !important;
   }
+  .mid-card-content-overlay {
+    height: 100% !important;
+  }
+
   .product-filter-btn {
     flex: 0 0 auto !important;
     scroll-snap-align: start !important;
