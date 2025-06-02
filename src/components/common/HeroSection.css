@@ -213,7 +213,6 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    height: 80vh;
     margin-top: 2rem; /* increased gap on mobile */
   }
   .letter-container {
@@ -239,8 +238,6 @@
 
 @media (max-width: 480px) {
   .hero-section {
-    height: 44vh !important;
-    min-height: 220px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -264,6 +261,7 @@
    
     margin: 0.08rem auto 0.08rem auto !important;
     display: block !important;
+    
   }
   .dot {
     width: 2.5px !important;
@@ -303,6 +301,7 @@
     padding: 0 !important;
     height: 20px !important;
     margin-top: 14px !important;
+   
 
     /* width: auto !important;
     min-width: unset !important;
