@@ -127,6 +127,7 @@
       gap: 1.2rem 0.5rem;
     }
   }
+
   
   .advanced-hero-bg {
     position: relative;
@@ -720,7 +721,7 @@
     
     
   }
- 
+  
   .product-card-dark {
     flex: 0 0 80vw !important;
     width: 80vw !important;
@@ -1034,7 +1035,7 @@
   .mid-card.exact-match-promo, .mid-card.exact-match-video {
     max-width: 100%;
     min-width: 0;
-    min-height: 120px;
+    min-height: 230px;
   }
   .mid-card-content-overlay {
     padding: 0.7rem 0.7rem 0.7rem 0.7rem;
@@ -1336,8 +1337,15 @@
     align-items: center !important;
     margin: 0 !important;
   }
-  .mid-card-content-overlay {
+  .mid-card.promo-mid-card {
     height: 100% !important;
+   
+  }
+ 
+ 
+  .mid-card-content-overlay {
+    height: 100px !important;
+
   }
 
   .product-filter-btn {

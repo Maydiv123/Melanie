@@ -145,8 +145,14 @@
 }
 
 .copyright {
-  color: black;
-  font-size: 1.125rem;
-  text-transform: capitalize;
-  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  color: #000;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.maydiv-text {
+  font-weight: 500;
+  color: #000;
+  font-size: 0.875rem;
 }

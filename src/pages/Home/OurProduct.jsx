@@ -51,15 +51,6 @@ import { useNavigate } from 'react-router-dom';
 
 const promoImg = 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80';
 
-const FILTERS = [
-  { label: 'All', icon: allIcon },
-  { label: 'Tissue Paper', icon: tissueIcon },
-  { label: 'Napkin', icon: napkinIcon },
-  { label: 'Kitchen Towel', icon: towelIcon },
-  { label: 'Wet Wipes', icon: wipesIcon },
-  { label: 'Facial Tissue', icon: faceIcon },
-];
-
 const ProductsSection = () => {
   const videoRef = useRef(null);
   const promoRef = useRef(null);
@@ -208,27 +199,11 @@ const ProductsSection = () => {
               <span className="stars">★★★★★</span>
             </div>
             {/* CTAs */}
-            <div className="banner-cta-row">
-              <button className="banner-cta-btn">View-Details</button>
-              <button className="banner-cta-btn secondary">Learn More</button>
-            </div>
+          
           </div>
         </div>
         {/* Filter Bar (moved here) */}
-        <div className="product-filter-bar">
-          {FILTERS.map((filter) => (
-          <button
-              key={filter.label}
-              className={`product-filter-btn${activeFilter === filter.label ? ' active' : ''}`}
-              onClick={() => setActiveFilter(filter.label)}
-            >
-              <span className="product-filter-icon">
-                <img src={filter.icon} alt={filter.label} style={{ width: 24, height: 24, objectFit: 'contain' }} />
-              </span>
-              {filter.label}
-          </button>
-        ))}
-        </div>
+       
         {/* Featured Products Grid */}
         <h2 className="product-section-title">#Featured Products</h2>
         <div className="product-grid-dark">

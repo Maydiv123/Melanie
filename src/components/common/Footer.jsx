@@ -14,7 +14,8 @@ const Footer = () => {
           <img src={MelanieBlackLogo} alt="Melanie Logo" className="footer-logo" />
           <p className="copyright">
             Copyright © {currentYear} . <br />
-            All Rights reserved
+            All Rights reserved<br />
+            <span className="maydiv-text"><strong>Maydiv Infotech</strong></span>
           </p>
         </div>
         
