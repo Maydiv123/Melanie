@@ -1,8 +1,11 @@
 import React from 'react';
 import Button from '../../components/ui/Button';
+import { useNavigate } from 'react-router-dom';
 import './CtaSection.css';
 
 const CtaSection = () => {
+  const navigate = useNavigate();
+  
   return (
     <section className="cta-section">
       {/* Top wave decoration */}
@@ -18,8 +21,10 @@ const CtaSection = () => {
         
         <div className="cta-btn-row">
           <Button 
-            onClick={() => window.location.href = '/get-started'}
-            variant="primary" size="large" className="cta-btn"
+            onClick={() => navigate('/products')}
+            variant="primary" 
+            size="large" 
+            className="cta-btn"
           >
             Get Started
           </Button>

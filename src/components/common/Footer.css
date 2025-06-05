@@ -26,11 +26,13 @@
   }
 }
 
+
 /* Consolidated styles for screens below 430px */
 @media (max-width: 430px) {
   .footer {
     padding: 1.5rem 0;
   }
+ 
   .footer-container {
     display: flex !important;
     flex-direction: row !important;
@@ -82,6 +84,8 @@
   .footer-logo {
     height: 36px !important;
     margin-bottom: 0.75rem !important;
+    margin-left: -14px !important;
+    
   }
 }
 
@@ -110,6 +114,7 @@
   width: auto;
   display: block;
   margin-bottom: 1rem;
+  margin-left: -20px;
 }
 
 .section {
@@ -119,7 +124,7 @@
 .section-title {
   color: black;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
   font-family: 'Inter', sans-serif;
@@ -134,7 +139,7 @@
 .link {
   color: black;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-transform: capitalize;
   font-family: 'Inter', sans-serif;
   text-decoration: none;

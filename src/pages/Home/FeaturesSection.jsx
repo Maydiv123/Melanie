@@ -6,28 +6,26 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: '/images/img_icons.svg',
-      title: 'Unbreakable Softness',
-      description: 'Built to Care, Made to Last'
+      title: 'Premium Softness',
+      description: 'Experience Luxurious Comfort Every Time'
     },
     {
       icon: '/images/img_icons_97x97.svg',
-      title: 'Smarter Proctoring Starts Here',
-      description: 'We Take Care of the Routine, Sustainably'
+      title: 'Eco-Friendly Choice',
+      description: 'Sustainable Materials, Earth-Friendly Process'
     },
     {
       icon: '/images/img_icons_1.svg',
-      title: 'Post-Use Purity',
-      description: 'Because Clean Doesn’t End with a Wipe'
+      title: 'Superior Quality',
+      description: 'Strong, Absorbent, and Reliable'
     }
   ];
 
   return (
     <section className="features-section">
       <div className="features-container">
-        <h2 className="features-title">Gentle on You, Kind to Earth</h2>
-        <p className="features-desc">
-        Experience the Future of Examination Integrity with Advanced AI-Powered Proctoring
-        </p>
+        <h2 className="features-title">Gentle on You, Kind to Earth</h2><br/>
+       
         <div className="features-grid">
           {features.map((feature, index) => (
             <Card
