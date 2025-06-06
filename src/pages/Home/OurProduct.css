@@ -1342,6 +1342,11 @@
     align-items: center !important;
     margin: 0 !important;
   }
+  .voice-btn{
+    margin-top: -20px;
+    
+  
+  }
   .mid-card.promo-mid-card {
     height: 100% !important;
    

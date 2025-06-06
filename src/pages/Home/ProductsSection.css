@@ -148,8 +148,11 @@
 }
 
 .products-card-link-arrow {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+  display: inline !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .products-slider-row {
@@ -184,6 +187,7 @@
     border-radius: 1.2rem !important;
     min-width: 0 !important;
     height: auto !important;
+    margin-left: 57px;
   }
   .products-explore-text {
     font-size: 0.7rem !important;
@@ -216,7 +220,7 @@
     height: 181px;
     border-radius: 12px;
     margin-bottom: 0.8rem;
-    margin-right: 50px;
+   
   }
   .products-card-title {
     font-size: 0.9rem;
@@ -229,7 +233,31 @@
     margin-right: 3rem;
   }
   .products-card-link-arrow {
-  
-  
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    display: inline !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .products-card-link {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+    max-width: 38px !important;
+    max-height: 38px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    background: #ffea00 !important;
+    border: 2px solid #000 !important;
+    border-radius: 9999px !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    margin-left: 2rem !important;
+
   }
 } 

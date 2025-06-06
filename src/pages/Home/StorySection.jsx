@@ -28,11 +28,7 @@ const StorySection = () => {
             <p className="story-desc">
               {isMobile ? (showFull ? fullText : shortText) : fullText}
             </p>
-            {isMobile && !showFull && (
-              <button className="story-read-more-btn" onClick={() => setShowFull(true)}>
-                Read More
-              </button>
-            )}
+           
             {isMobile && showFull && (
               <button className="story-read-more-btn" onClick={() => setShowFull(false)}>
                 Read Less
