@@ -1,11 +1,20 @@
 /* CtaSection component styles */
 
 .cta-section {
-  background: #121212;
+  background: #121212 url('/images/Footerbg.png') center/cover no-repeat;
   padding-top: 8rem;
   padding-bottom: 8rem;
   position: relative;
 }
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+
 .cta-top-wave {
   position: absolute;
   top: 0;
@@ -42,7 +51,8 @@
   margin: 0 auto;
   padding: 0 1.25rem;
   position: relative;
-  z-index: 10;
+  z-index: 1;
+  margin-top: 220px;
 }
 .cta-title {
   color: #f1e811;
@@ -52,11 +62,16 @@
   max-width: 900px;
   margin: 0 auto 4rem auto;
   line-height: 1.1;
+  position: relative;
+  z-index: 1;
 }
 .cta-btn-row {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+
 }
 .cta-btn {
   padding: 1.25rem 3rem;
@@ -69,18 +84,21 @@
     padding-bottom: 2.5rem !important;
   }
   .cta-title {
-    font-size: 1.5rem !important;
-    margin-bottom: 1.5rem !important;
-    padding: 0 0.5rem !important;
+    font-size: 0.8rem !important;
+   
+    margin-bottom: -284px;
+
   }
   .cta-btn-row {
     flex-direction: column !important;
     gap: 0.7rem !important;
+   
   }
   .cta-btn {
     width: 100% !important;
     font-size: 1rem !important;
     padding: 0.8rem 0 !important;
+  
   }
   .cta-wave-img-2 {
     height: 150px !important;
@@ -89,7 +107,41 @@
     height: 150px !important;
   }
   .cta-btn-row{
-    width: 140px;
+    width: 120px;
     margin-left: 124px;
+  
   }
+  .duration-200{
+  
+    margin-top: 299px;
+    margin-left: -54px;
+
+  }
+  .cta-section {
+    padding: 0; /* reduce any internal spacing */
+    min-height: 200px; /* or an appropriate fixed height */
+    background: #121212 url('/images/Footerbg.png') center center/contain no-repeat !important;
+  
+  
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    
+  }
+  .cta-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
 } 

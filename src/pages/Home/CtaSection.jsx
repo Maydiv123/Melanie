@@ -8,11 +8,7 @@ const CtaSection = () => {
   
   return (
     <section className="cta-section">
-      {/* Top wave decoration */}
-      <div className="cta-top-wave">
-        <img src="/images/img_frame_34.png" alt="Top wave decoration" className="cta-wave-img-2" />
-      </div>
-      
+    
       {/* Main content */}
       <div className="cta-container">
         <h2 className="cta-title">
@@ -32,9 +28,7 @@ const CtaSection = () => {
       </div>
       
       {/* Bottom wave decoration */}
-      <div className="cta-bottom-wave">
-        <img src="/images/img_frame_19.png" alt="Bottom wave decoration" className="cta-wave-img" />
-      </div>
+     
     </section>
   );
 };

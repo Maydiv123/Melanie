@@ -87,7 +87,7 @@ const ContactUs = () => {
           <Lottie animationData={contactLottie} loop={true} className="contactus-lottie" />
         </div>
             <form className="contactus-form" onSubmit={handleSubmit} action="https://formspree.io/f/xyzjzkzl" method="POST">
-          <h2 className="contactus-title">Let's talk</h2>
+          <h2 className="contactus-title">Contact With Us</h2>
           <p className="contactus-desc">Here's the part where we listen. Tell us all about it.</p>
           <div className="contactus-field">
             <input
@@ -126,13 +126,29 @@ const ContactUs = () => {
           </div>
           <motion.button
             type="submit"
-            className="contactus-btn"
+            className="contactus-btn modern-contact-btn"
             whileTap={{ scale: 0.97 }}
             whileHover={{ scale: 1.04 }}
             transition={{ type: 'spring', stiffness: 300 }}
             disabled={submitted}
           >
-            {submitted ? 'Sent!' : 'Send Message'}
+            <span className="wave-svg">
+              <svg viewBox="0 0 120 28" preserveAspectRatio="none">
+                <path d="M0,10 Q30,20 60,10 T120,10 V28 H0 Z" fill="#fffbe6" opacity="0.5">
+                  <animate 
+                    attributeName="d"
+                    dur="2s"
+                    repeatCount="indefinite"
+                    values="
+                      M0,10 Q30,20 60,10 T120,10 V28 H0 Z;
+                      M0,12 Q30,8 60,12 T120,12 V28 H0 Z;
+                      M0,10 Q30,20 60,10 T120,10 V28 H0 Z
+                    "
+                  />
+                </path>
+              </svg>
+            </span>
+            <span className="btn-text">{submitted ? 'Sent!' : 'Send Message'}</span>
           </motion.button>
         </form>
       </motion.div>
@@ -168,7 +184,25 @@ const ContactUs = () => {
           <h3>Subscribe to our Newsletter</h3>
           <form className="newsletter-form" onSubmit={e => { e.preventDefault(); alert('Thank you for subscribing!'); }}>
             <input type="email" placeholder="Your Email" required className="newsletter-input" />
-            <button type="submit" className="newsletter-btn">Subscribe</button>
+            <button type="submit" className="newsletter-btn modern-contact-btn">
+              <span className="wave-svg">
+                <svg viewBox="0 0 120 28" preserveAspectRatio="none">
+                  <path d="M0,10 Q30,20 60,10 T120,10 V28 H0 Z" fill="#fffbe6" opacity="0.5">
+                    <animate 
+                      attributeName="d"
+                      dur="2s"
+                      repeatCount="indefinite"
+                      values="
+                        M0,10 Q30,20 60,10 T120,10 V28 H0 Z;
+                        M0,12 Q30,8 60,12 T120,12 V28 H0 Z;
+                        M0,10 Q30,20 60,10 T120,10 V28 H0 Z
+                      "
+                    />
+                  </path>
+                </svg>
+              </span>
+              <span className="btn-text">Subscribe</span>
+            </button>
           </form>
         </div>
         <Footer />

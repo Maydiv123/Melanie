@@ -23,22 +23,23 @@
 }
 .story-heading {
   color: #f1e811;
-  font-size: 2.1rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 270;
   margin-bottom: 1.5rem;
 }
 .story-title {
   color: #f1e811;
-  font-size: 2.9rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 200;
   line-height: 1.1;
   margin-bottom: 2.5rem;
 }
 .story-desc {
   color: rgba(241, 232, 17, 0.5);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 1.2rem;
+  font-weight: 200;
 }
 .story-img-col {
   position: relative;
@@ -128,23 +129,26 @@
     box-sizing: border-box !important;
   }
   .story-heading {
-    font-size: 0.95rem !important;
+    font-size: 0.7rem !important;
     margin-bottom: 0.5rem !important;
     text-align: center !important;
+    font-weight: 200;
   }
   .story-title {
-    font-size: 1.1rem !important;
+    font-size: 0.9rem !important;
     margin-bottom: 0.5rem !important;
     text-align: center !important;
+    font-weight: 200;
   }
   .story-desc {
-    font-size: 0.85rem !important;
+    font-size: 0.7rem !important;
     line-height: 1.5 !important;
     margin-bottom: 1rem !important;
     text-align: left !important;
     word-break: normal !important;
     overflow-wrap: break-word !important;
     white-space: normal !important;
+    font-weight: 200;
   }
   .story-grid {
     display: flex !important;

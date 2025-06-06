@@ -57,20 +57,21 @@ body {
 .aboutus-section-title {
   color: #ffe066;
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 300;
   margin-bottom: 1.2rem;
   letter-spacing: 0.12em;
 }
 .aboutus-heading {
-  font-size: 2.7rem;
-  font-weight: 900;
+  font-size: 1.7rem;
+  font-weight: 200;
   margin-bottom: 1.2rem;
   color: #fff;
 }
 .aboutus-desc {
   color: #ccc;
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 2.2rem;
+  font-weight: 200;
 }
 .aboutus-contact-btn {
   background: #fff;
@@ -99,7 +100,7 @@ body {
 }
 .aboutus-skills-col h3 {
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 0.5rem;
   color: #ffe066;
 }
@@ -107,6 +108,7 @@ body {
   color: #bbb;
   font-size: 1.05rem;
   margin-bottom: 1.5rem;
+  font-weight: 200;
 }
 .aboutus-skill {
   display: flex;
@@ -116,8 +118,9 @@ body {
 }
 .aboutus-skill span {
   min-width: 110px;
-  font-size: 1.08rem;
+  font-size: 0.9rem;
   color: #fff;
+  font-weight: 200;
 }
 .aboutus-progress-bar {
   flex: 1 1 0;
@@ -135,7 +138,7 @@ body {
 }
 .aboutus-skill-percent {
   color: #ffe066;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1.08rem;
   min-width: 40px;
 }
@@ -147,6 +150,8 @@ body {
   gap: 2rem 2.5rem;
   align-items: flex-start;
   justify-content: flex-start;
+  font-weight: 200;
+  font-size: 0.8rem;
 }
 .aboutus-stat {
   display: flex;
@@ -158,13 +163,13 @@ body {
 .aboutus-stat-num {
   color: #ffe066;
   font-size: 2.1rem;
-  font-weight: 800;
+  font-weight: 300;
   margin-bottom: 0.2rem;
 }
 .aboutus-stat-label {
   color: #fff;
   font-size: 1.05rem;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 .aboutus-cta-section {
@@ -241,10 +246,11 @@ body {
     padding: 0;
   }
   .aboutus-heading {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 200px !important;
   }
   .aboutus-desc {
-    font-size: 1.05rem;
+    font-size: 0.7rem;
   }
   .aboutus-contact-btn {
     font-size: 1.05rem;
@@ -257,7 +263,8 @@ body {
     font-size: 2.1rem;
   }
   .aboutus-heading {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    font-weight: 200px !important;
   }
   .aboutus-cta-content h2 {
     font-size: 1.1rem;
@@ -309,15 +316,17 @@ body {
     text-align: left !important;
   }
   .aboutus-section-title {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
     margin-bottom: 0.5rem !important;
+    font-weight: 300 !important;
   }
   .aboutus-heading {
-    font-size: 1.2rem !important;
+    font-size: 0.7rem !important;
     margin-bottom: 0.5rem !important;
+    font-weight: 200px !important;
   }
   .aboutus-desc {
-    font-size: 0.95rem !important;
+    font-size: 0.7rem !important;
     margin-bottom: 1rem !important;
   }
   .aboutus-contact-btn {
@@ -335,8 +344,9 @@ body {
     padding: 0 !important;
   }
   .aboutus-skill span, .aboutus-skill-percent {
-    font-size: 0.95rem !important;
+    font-size: 0.8rem !important;
     min-width: 0 !important;
+    font-weight: 200;
   }
   .aboutus-progress-bar {
     height: 8px !important;
@@ -344,9 +354,11 @@ body {
   }
   .aboutus-stat-num {
     font-size: 1.2rem !important;
+    font-weight: 200;
   }
   .aboutus-stat-label {
     font-size: 0.95rem !important;
+    font-weight: 200;
   }
   .aboutus-cta-section {
     min-height: 120px !important;
@@ -375,18 +387,20 @@ body {
 }
 .aboutus-testimonials-title {
   font-family: 'Montserrat', serif;
-  font-size: 2.2rem;
-  font-weight: 900;
+  font-size: 2rem;
+  font-weight: 300;
   color: #2d3559;
   letter-spacing: 0.08em;
   margin-bottom: 0.5rem;
   line-height: 1.1;
+
 }
+
 .aboutus-testimonials-client {
   color: #ffe066;
   font-family: 'Dancing Script', cursive;
-  font-size: 2.1rem;
-  font-weight: 700;
+  font-size: 1.9rem;
+  font-weight: 100;
   letter-spacing: 0.04em;
 }
 .aboutus-testimonials-stars {
@@ -397,7 +411,7 @@ body {
 }
 .aboutus-testimonials-cards {
   position: relative;
-  min-height: 340px;
+  min-height: 400px;
   max-width: 900px;
   margin: 2.5rem auto 0 auto;
   width: 100%;
@@ -485,7 +499,7 @@ body {
 .aboutus-testimonial-card .aboutus-testimonial-text {
   color: #222;
   font-size: 1.08rem;
-  font-weight: 500;
+  font-weight: 300;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
@@ -531,6 +545,7 @@ body {
   gap: 0.7rem;
   margin-top: 2.2rem;
   margin-bottom: 2.8rem;
+  margin-right: 220px;
 }
 .aboutus-testimonials-dot {
   width: 13px;
@@ -546,4 +561,121 @@ body {
   opacity: 1;
   transform: scale(1.18);
   border-color: #ffd700;
+}
+
+@keyframes wave-move {
+  0% {
+    left: -60%;
+    opacity: 0.2;
+  }
+  50% {
+    left: 20%;
+    opacity: 0.35;
+  }
+  100% {
+    left: 120%;
+    opacity: 0;
+  }
+}
+.modern-contact-btn1{
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg,   hsl(51, 43%, 39%) 100%);
+  color: #181818;
+  font-weight: 700;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 2.5rem;
+  padding: 0.9rem 2.5rem;
+ 
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s, transform 0.18s, box-shadow 0.18s;
+  outline: none;
+  letter-spacing: 0.5px;
+  z-index: 1;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.modern-contact-btn1 .wave-svg {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+}
+
+.modern-contact-btn1 .wave-svg svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.modern-contact-btn1 .btn-text {
+  position: relative;
+  z-index: 1;
+}
+
+.modern-contact-btn {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg,   #388e3c 100%);
+  color: #181818;
+  font-weight: 700;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 2.5rem;
+  padding: 0.9rem 2.5rem;
+ 
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s, transform 0.18s, box-shadow 0.18s;
+  outline: none;
+  letter-spacing: 0.5px;
+  z-index: 1;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modern-contact-btn .wave-svg {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+}
+
+.modern-contact-btn .wave-svg svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.modern-contact-btn .btn-text {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 480px) {
+  .modern-contact-btn {
+    font-size: 1rem !important;
+    padding: 0.7rem 1.2rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .modern-contact-btn1{
+    font-size: 1rem !important;
+    padding: 0.7rem 1.2rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    
+  }
 } 

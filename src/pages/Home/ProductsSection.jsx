@@ -49,7 +49,7 @@ const ProductsSection = () => {
                   <h3 className="products-card-title">{product.name}</h3>
                   <button
                     className="products-card-link"
-                    style={{ background: '#ffea00', border: '2px solid #000', borderRadius: '9999px', width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '1rem', cursor: 'pointer', padding: 0 }}
+                    style={{ background: '#ffea00', border: '2px solid #000', borderRadius: '9999px', width: '37px', height: '38px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '7rem', cursor: 'pointer', padding: 0,fontSize: '0.7rem',fontWeight: '100' }}
                     onClick={() => navigate(`/products`)}
                   >
                     <img src="/images/img_arrowright.svg" alt="View product" className="products-card-link-arrow" />

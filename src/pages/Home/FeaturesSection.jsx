@@ -5,17 +5,17 @@ import './FeaturesSection.css';
 const FeaturesSection = () => {
   const features = [
     {
-      icon: '/images/img_icons.svg',
+      icon: '/images/img_icons.png',
       title: 'Premium Softness',
       description: 'Experience Luxurious Comfort Every Time'
     },
     {
-      icon: '/images/img_icons_97x97.svg',
+      icon: '/images/img_icons_97x97.png',
       title: 'Eco-Friendly Choice',
       description: 'Sustainable Materials, Earth-Friendly Process'
     },
     {
-      icon: '/images/img_icons_1.svg',
+      icon: '/images/img_icons_1.png',
       title: 'Superior Quality',
       description: 'Strong, Absorbent, and Reliable'
     }
