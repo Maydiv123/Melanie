@@ -212,24 +212,24 @@
  
   }
   .products-card-img {
-    width: 140px;
-    height: 140px;
+    width: 274px;
+    height: 181px;
     border-radius: 12px;
     margin-bottom: 0.8rem;
+    margin-right: 50px;
   }
   .products-card-title {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 200;
     margin: 0;
     padding: 0;
   }
   .products-card-link {
-    width: 32px;
-    height: 32px;
-    margin-left: 0.5rem;
+    
+    margin-right: 3rem;
   }
   .products-card-link-arrow {
-    width: 1.2rem;
-    height: 1.2rem;
+  
+  
   }
 } 
