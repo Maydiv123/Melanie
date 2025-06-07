@@ -7,9 +7,29 @@ import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
 import earthVideo from '../assets/Earth.mp4';
 
+// Add this WaveSVG component after imports
+const WaveSVG = ({ duration = '2s' }) => (
+  <svg viewBox="0 0 120 28" preserveAspectRatio="none">
+    <path d="M0,10 Q30,20 60,10 T120,10 V28 H0 Z" fill="#fffbe6" opacity="0.5">
+      <animate 
+        attributeName="d"
+        dur={duration}
+        repeatCount="indefinite"
+        values="
+          M0,10 Q30,20 60,10 T120,10 V28 H0 Z;
+          M0,12 Q30,8 60,12 T120,12 V28 H0 Z;
+          M0,10 Q30,20 60,10 T120,10 V28 H0 Z
+        "
+      />
+    </path>
+  </svg>
+);
+
 const ContactUs = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [waveFast, setWaveFast] = useState(false);
+  const [newsletterWaveFast, setNewsletterWaveFast] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -131,22 +151,11 @@ const ContactUs = () => {
             whileHover={{ scale: 1.04 }}
             transition={{ type: 'spring', stiffness: 300 }}
             disabled={submitted}
+            onMouseEnter={() => setWaveFast(true)}
+            onMouseLeave={() => setWaveFast(false)}
           >
             <span className="wave-svg">
-              <svg viewBox="0 0 120 28" preserveAspectRatio="none">
-                <path d="M0,10 Q30,20 60,10 T120,10 V28 H0 Z" fill="#fffbe6" opacity="0.5">
-                  <animate 
-                    attributeName="d"
-                    dur="2s"
-                    repeatCount="indefinite"
-                    values="
-                      M0,10 Q30,20 60,10 T120,10 V28 H0 Z;
-                      M0,12 Q30,8 60,12 T120,12 V28 H0 Z;
-                      M0,10 Q30,20 60,10 T120,10 V28 H0 Z
-                    "
-                  />
-                </path>
-              </svg>
+              <WaveSVG duration={waveFast ? '0.5s' : '2s'} />
             </span>
             <span className="btn-text">{submitted ? 'Sent!' : 'Send Message'}</span>
           </motion.button>
@@ -184,22 +193,14 @@ const ContactUs = () => {
           <h3>Subscribe to our Newsletter</h3>
           <form className="newsletter-form" onSubmit={e => { e.preventDefault(); alert('Thank you for subscribing!'); }}>
             <input type="email" placeholder="Your Email" required className="newsletter-input" />
-            <button type="submit" className="newsletter-btn modern-contact-btn">
+            <button
+              type="submit"
+              className="newsletter-btn modern-contact-btn"
+              onMouseEnter={() => setNewsletterWaveFast(true)}
+              onMouseLeave={() => setNewsletterWaveFast(false)}
+            >
               <span className="wave-svg">
-                <svg viewBox="0 0 120 28" preserveAspectRatio="none">
-                  <path d="M0,10 Q30,20 60,10 T120,10 V28 H0 Z" fill="#fffbe6" opacity="0.5">
-                    <animate 
-                      attributeName="d"
-                      dur="2s"
-                      repeatCount="indefinite"
-                      values="
-                        M0,10 Q30,20 60,10 T120,10 V28 H0 Z;
-                        M0,12 Q30,8 60,12 T120,12 V28 H0 Z;
-                        M0,10 Q30,20 60,10 T120,10 V28 H0 Z
-                      "
-                    />
-                  </path>
-                </svg>
+                <WaveSVG duration={newsletterWaveFast ? '0.5s' : '2s'} />
               </span>
               <span className="btn-text">Subscribe</span>
             </button>

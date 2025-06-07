@@ -9,7 +9,7 @@
 .contactus-card {
   min-height: 480px;
   background: rgba(10,10,10,0.75);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(23px);
   border-radius: 2rem;
   box-shadow: 0 8px 32px rgba(76,175,79,0.10), 0 1.5px 6px rgba(0,0,0,0.08);
   padding: 2.5rem 2.5rem 2rem 2.5rem;
@@ -54,7 +54,7 @@
 .contactus-input {
   width: 100%;
   padding: 1.1rem 1rem 0.5rem 1rem;
-  background: #232323;
+  background: transparent;
   color: #fff;
   border: none;
   border-radius: 1rem;
@@ -149,7 +149,7 @@
   flex: 1 1 0;
   min-width: 0;
   background: rgba(10,10,10,0.45);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(24px);
   border-radius: 1.5rem;
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
   padding: 2rem 2.5rem;
@@ -212,7 +212,7 @@
   border-radius: 0.8rem;
   border: none;
   font-size: 1.1rem;
-  background: #232323;
+  background: transparent;
   color: #fff;
 }
 .newsletter-btn {
@@ -353,4 +353,37 @@
     position: fixed !important;
     z-index: -1 !important;
   }
+}
+
+.modern-contact-btn, .modern-contact-btn1 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.modern-contact-btn .wave-svg,
+.modern-contact-btn1 .wave-svg {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+}
+
+.modern-contact-btn .wave-svg svg,
+.modern-contact-btn1 .wave-svg svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.modern-contact-btn .btn-text,
+.modern-contact-btn1 .btn-text {
+  position: relative;
+  z-index: 1;
 } 

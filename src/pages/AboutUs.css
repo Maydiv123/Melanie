@@ -603,11 +603,14 @@ body {
 
 .modern-contact-btn1 .wave-svg {
   position: absolute;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
+  left: -120%;
+  top: 0;
+  width: 120%;
+  height: 100%;
   z-index: 0;
   pointer-events: none;
   display: block;
+  transition: left 0.4s cubic-bezier(0.4,2,0.6,1), opacity 0.2s;
 }
 
 .modern-contact-btn1 .wave-svg svg {
@@ -619,6 +622,16 @@ body {
 .modern-contact-btn1 .btn-text {
   position: relative;
   z-index: 1;
+}
+
+.modern-contact-btn1:hover .wave-svg {
+  left: 0;
+  opacity: 1;
+  transition: left 0.4s cubic-bezier(0.4,2,0.6,1), opacity 0.2s;
+}
+
+.modern-contact-btn1:hover .wave-svg svg path animate {
+  dur: 0.5s !important;
 }
 
 .modern-contact-btn {

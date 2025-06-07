@@ -41,6 +41,23 @@ const AVATARS = [
   'https://randomuser.me/api/portraits/men/45.jpg',
 ];
 
+const WaveSVG = ({ duration = '2s' }) => (
+  <svg viewBox="0 0 120 28" preserveAspectRatio="none">
+    <path d="M0,10 Q30,20 60,10 T120,10 V28 H0 Z" fill="#fffbe6" opacity="0.5">
+      <animate 
+        attributeName="d"
+        dur={duration}
+        repeatCount="indefinite"
+        values="
+          M0,10 Q30,20 60,10 T120,10 V28 H0 Z;
+          M0,12 Q30,8 60,12 T120,12 V28 H0 Z;
+          M0,10 Q30,20 60,10 T120,10 V28 H0 Z
+        "
+      />
+    </path>
+  </svg>
+);
+
 const AboutUs = () => {
   const skillsRef = useRef(null);
   const statsRef = useRef(null);
@@ -53,6 +70,8 @@ const AboutUs = () => {
   const [paused, setPaused] = useState(false);
   const [fade, setFade] = useState(false);
   const navigate = useNavigate();
+
+  const [waveFast, setWaveFast] = useState(false);
 
   // Animate skills
   useEffect(() => {
@@ -171,22 +190,14 @@ const AboutUs = () => {
             <h3 className="aboutus-section-title">About Us</h3>
             <h2 className="aboutus-heading">We Always Make The Best</h2>
             <p className="aboutus-desc">From sourcing responsibly to crafting ultra-soft, skin-friendly tissue products, we never cut corners. Our commitment to quality, sustainability, and comfort is at the heart of everything we do. Whether it's for your home, business, or on the go — every sheet we make reflects care, responsibility, and a promise to the planet.</p>
-            <button className="modern-contact-btn1" onClick={() => navigate('/contact')}>
+            <button
+              className="modern-contact-btn1"
+              onClick={() => navigate('/contact')}
+              onMouseEnter={() => setWaveFast(true)}
+              onMouseLeave={() => setWaveFast(false)}
+            >
               <span className="wave-svg">
-                <svg viewBox="0 0 120 28" preserveAspectRatio="none">
-                  <path d="M0,10 Q30,20 60,10 T120,10 V28 H0 Z" fill="#fffbe6" opacity="0.5">
-                    <animate 
-                      attributeName="d"
-                      dur="2s"
-                      repeatCount="indefinite"
-                      values="
-                        M0,10 Q30,20 60,10 T120,10 V28 H0 Z;
-                        M0,12 Q30,8 60,12 T120,12 V28 H0 Z;
-                        M0,10 Q30,20 60,10 T120,10 V28 H0 Z
-                      "
-                    />
-                  </path>
-                </svg>
+                <WaveSVG duration={waveFast ? '0.5s' : '2s'} />
               </span>
               <span className="btn-text">Contact Us</span>
             </button>
