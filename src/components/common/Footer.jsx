@@ -39,7 +39,7 @@ const Footer = () => {
             <li>Address : SCO 30 2nd Floor, Omax World Street, Sector 70, Greater Faridabad, 121006</li>
           </ul>
         </div>
-      </div>F
+      </div>
     </footer>
   );
 };
