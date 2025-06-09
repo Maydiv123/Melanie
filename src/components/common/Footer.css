@@ -22,7 +22,7 @@
   min-width: 180px;
   margin-top: -1px;
 
- margin-left: -142px;
+ margin-left: 311px;
 
 }
 
@@ -35,22 +35,22 @@
 .section {
   flex: 1 1 0;
   min-width: 360px;
-  margin-left: 200px;
+  margin-left: 330px;
   margin-bottom: 30px;
  
 }
 .section1{
   flex: 1 1 0;
   min-width: 360px;
-  margin-right: 160px;
+  margin-left: -146px;
   margin-bottom: 49px;
 
 }
 
 
 .section-title {
-  font-size: 1.7rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 600;
   margin-bottom: 1rem;
   color: #181818;
   letter-spacing: 0.02em;
@@ -78,7 +78,7 @@
 }
 
 .copyright {
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: #181818;
   margin-top: 1rem;
   line-height: 1.5;
@@ -89,7 +89,7 @@
 .maydiv-text {
   font-weight: 400;
   color: #181818;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 900px) {

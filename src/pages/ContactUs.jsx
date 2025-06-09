@@ -168,7 +168,7 @@ const ContactUs = () => {
             <h3>Contact Information</h3>
             <ul>
               <li><strong>Phone:</strong> +91 7317228662</li>
-              <li><strong>Email:</strong> akanksha.kukreti@mekanieindia.com</li>
+              <li><strong>Email:</strong> info@melanieindia.com</li>
               <li><strong>Address:</strong> SCO 30, 2nd Floor, Omaxe World Street, Sector-79, Greater Faridabad, Haryana - 121006</li>
             </ul>
           </div>

@@ -35,11 +35,11 @@ const Footer = () => {
           <h3 className="section-title">Contact Us</h3>
           <ul className="link-list">
             <li>Phone : +91 7317228662</li>
-            <li>Email : Info.Kukreti@MekanieIndia.Com</li>
+            <li>Email : info@melanieindia.com</li>
             <li>Address : SCO 30 2nd Floor, Omax World Street, Sector 70, Greater Faridabad, 121006</li>
           </ul>
         </div>
-      </div>
+      </div>F
     </footer>
   );
 };
