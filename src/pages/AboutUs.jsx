@@ -36,7 +36,7 @@ const TESTIMONIALS = [
 ];
 
 const AVATARS = [
-  'https://randomuser.me/api/portraits/women/44.jpg',
+  'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=256&h=256&facepad=2',
   'https://randomuser.me/api/portraits/men/32.jpg',
   'https://randomuser.me/api/portraits/men/45.jpg',
 ];
@@ -191,15 +191,10 @@ const AboutUs = () => {
             <h2 className="aboutus-heading">We Always Make The Best</h2>
             <p className="aboutus-desc">From sourcing responsibly to crafting ultra-soft, skin-friendly tissue products, we never cut corners. Our commitment to quality, sustainability, and comfort is at the heart of everything we do. Whether it's for your home, business, or on the go — every sheet we make reflects care, responsibility, and a promise to the planet.</p>
             <button
-              className="modern-contact-btn1"
+              className="aboutus-link-btn"
               onClick={() => navigate('/contact')}
-              onMouseEnter={() => setWaveFast(true)}
-              onMouseLeave={() => setWaveFast(false)}
             >
-              <span className="wave-svg">
-                <WaveSVG duration={waveFast ? '0.5s' : '2s'} />
-              </span>
-              <span className="btn-text">Contact Us</span>
+              Contact Us
             </button>
           </div>
         </div>

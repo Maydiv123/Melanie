@@ -36,7 +36,9 @@ const Footer = () => {
           <ul className="link-list">
             <li>Phone : +91 7317228662</li>
             <li>Email : info@melanieindia.com</li>
-            <li>Address : SCO 30 2nd Floor, Omax World Street, Sector 70, Greater Faridabad, 121006</li>
+            <li>Address : SCO 30 2nd Floor, Omax World Street, Sector 70</li>
+            <li>Greater Faridabad</li>
+            <li>121006</li>
           </ul>
         </div>
       </div>

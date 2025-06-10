@@ -118,24 +118,26 @@
   .duration-200{
   
     margin-top: 299px;
-    margin-left: -54px;
+    margin-left: -59px;
 
   }
   .cta-section {
     padding: 0; /* reduce any internal spacing */
-    min-height: 200px; /* or an appropriate fixed height */
+    min-height: 181px; /* or an appropriate fixed height */
     background: #121212 url('/images/Footerbg.png') center center/contain no-repeat !important;
   
   
     background-repeat: no-repeat !important;
     background-size: contain !important;
     background-position: center !important;
+   
+    
     
   }
   .cta-container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 1.25rem;
+    padding: 0 1.25rem 1rem 1.25rem;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -146,6 +148,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
   }
   
 } 
