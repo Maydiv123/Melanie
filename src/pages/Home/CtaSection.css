@@ -123,7 +123,7 @@
   }
   .cta-section {
     padding: 0; /* reduce any internal spacing */
-    min-height: 181px; /* or an appropriate fixed height */
+    min-height: 174px; /* or an appropriate fixed height */
     background: #121212 url('/images/Footerbg.png') center center/contain no-repeat !important;
   
   
