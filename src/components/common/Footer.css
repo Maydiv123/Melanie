@@ -5,7 +5,7 @@
   color: #181818;
   padding: 3rem 0 2rem 0;
   font-family: 'Inter', sans-serif;
-  height: 340px;
+  height: 300px;
 }
 
 .footer-container {
@@ -14,39 +14,28 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
+  gap: 0;
 }
 
-.brand-section {
+.brand-section,
+.section,
+.section1 {
   flex: 1 1 0;
-  min-width: 180px;
-  margin-top: -1px;
-
- margin-left: 229px;
-
+  min-width: 200px;
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
+.cor1{
+  margin-top: 10px;
+}
+
 
 .footer-logo {
-  height: 41px;
-  margin-bottom: 1rem;
- 
+  height: 55px;
+  margin-top: -10px;
+  margin-left: -218px;
 }
-
-.section {
-  flex: 1 1 0;
-  min-width: 360px;
-  margin-left: 331px;
-  margin-bottom: 30px;
- 
-}
-.section1{
-  flex: 1 1 0;
-  min-width: 360px;
-  margin-left: -49px;
-  margin-bottom: 49px;
-
-}
-
 
 .section-title {
   font-size: 1.4rem;
@@ -60,17 +49,39 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  margin-left: -197px;
+  font-weight: 300;
+  margin-top: 3px;
+
+}
+.cor3{
+  margin-top: 4px;
+}
+.link-list2{
+  margin-right: -300px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.1rem;
+ 
+}
+.link-list3{
+  margin-left: -3px;
 }
 
 .link {
   color: #181818;
   text-decoration: none;
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
   display: block;
   transition: color 0.2s;
+  font-weight: 400;
+  margin-top: 14px;
+
+ 
 }
+
 
 .link:hover {
   color: #000;
@@ -84,12 +95,56 @@
   line-height: 1.5;
   white-space: nowrap;
   font-weight: 400;
+  text-align: center;
 }
 
 .maydiv-text {
   font-weight: 400;
   color: #181818;
   font-size: 1rem;
+  margin-bottom: 300px;
+}
+
+.footer-section-separator {
+  width: 1px;
+  background: #0a0a0a;
+  height: 210px;
+  align-self: stretch;
+  margin: 0 10px;
+  opacity: 0.7;
+  margin-left: -197px;
+}
+.cor{
+  font-weight: 400;
+  font-size: 1.3rem;
+  gap: 10px;
+ 
+
+}
+.footer-section-separator2{
+  width: 1px;
+  background: #0a0a0a;
+  height: 210px;
+ 
+  margin: 0 10px;
+  opacity: 0.7;
+}
+.footer-section-separator1{
+  width: 1px;
+  background: #0a0a0a;
+  height: 210px;
+  align-self: stretch;
+  margin: 0 10px;
+  opacity: 0.7;
+  margin-left: 100px;
+ 
+}
+  
+
+  
+
+.link-list1{
+  margin-right: -197px;
 }
 
 @media (max-width: 900px) {
@@ -98,9 +153,13 @@
     gap: 2rem;
     align-items: flex-start;
   }
-  .section, .brand-section {
+  .section, .brand-section, .section1 {
     min-width: 0;
     width: 100%;
+    padding: 0;
+  }
+  .footer-section-separator {
+    display: none;
   }
 }
 
@@ -111,40 +170,75 @@
     box-sizing: border-box;
     overflow-x: hidden;
   }
+  .contact-details-heading {
+    margin-left: 3px !important;
+    margin-top: -130px;
+  }
+  .contact-details-container{
+    margin-top: 100px;
+  }
+ 
   .footer-container {
     flex-direction: column !important;
     align-items: center !important;
     gap: 1.2rem !important;
-
     width: 100vw;
+    justify-content: center !important;
+    text-align: center !important;
   }
+  .contact-details-heading1{
+    margin-left: 149px !important;
+  }
+  .contact-details-heading2{
+    margin-left: 110px !important;
+  }
+ 
   .section, .section1, .brand-section {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
     margin: 0 !important;
-   
     text-align: center !important;
     align-self: center !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   .footer-logo {
-    height: 18px;
-    margin-bottom: 0.3rem;
-    margin-left: 178px;
+   
+    margin-left: 0 !important;
+    display: block;
+    margin-right: 0 !important;
   }
   .section-title {
     font-size: 0.7rem;
     margin-bottom: 0.1rem;
+    text-align: center !important;
   }
   .link {
     font-size: 0.65rem;
+    text-align: center !important;
   }
   .copyright, .maydiv-text {
     font-size: 0.65rem;
     margin-top: 0.1rem;
+    text-align: center !important;
   }
-  .link-list {
+  .link-list, .link-list1, .link-list2, .link-list3 {
     font-size: 0.7rem;
+    margin: 0 !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .footer-section-separator,
+  .footer-section-separator1,
+  .footer-section-separator2 {
+    display: none !important;
   }
 }
 

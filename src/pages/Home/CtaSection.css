@@ -52,12 +52,12 @@
   padding: 0 1.25rem;
   position: relative;
   z-index: 1;
-  margin-top: 220px;
+ 
 }
 .cta-title {
   color: #f1e811;
-  font-size: 4rem;
-  font-weight: c00;
+  font-size: 3.2rem;
+  font-weight: 200;
   text-align: center;
   max-width: 900px;
   margin: 0 auto 4rem auto;
@@ -87,6 +87,7 @@
     font-size: 0.8rem !important;
    
     margin-bottom: -284px;
+    font-weight: 100 !important;
 
   }
   .cta-btn-row {
