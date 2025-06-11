@@ -95,6 +95,12 @@ const Footer = () => {
           </div>
           </div>
         </div>
+        <div className='footer-copyright'>
+        <div className="copyright">
+  <p>© {currentYear} Melanie. All rights reserved.</p>
+  <p>Crafted by <span className="crafted-by">MayDiv Infotech</span></p>
+</div>
+        </div>
     
     </footer>
   );
