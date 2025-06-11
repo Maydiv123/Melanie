@@ -190,7 +190,7 @@
     margin-left: 149px !important;
   }
   .contact-details-heading2{
-    margin-left: 110px !important;
+    margin-left: 94px !important;
   }
  
   .section, .section1, .brand-section {
@@ -226,7 +226,7 @@
     margin-top: 0.1rem;
     text-align: center !important;
   }
-  .link-list, .link-list1, .link-list2, .link-list3 {
+  .link-list, .link-list1, .link-list3 {
     font-size: 0.7rem;
     margin: 0 !important;
     text-align: center !important;
@@ -234,6 +234,17 @@
     justify-content: center !important;
     display: flex !important;
     flex-direction: column !important;
+  }
+  .link-list2{
+    font-size: 0.7rem;
+    margin: 0 !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+   
+    flex-direction: column !important;
+    margin-top: 100px;
+
   }
   .footer-section-separator,
   .footer-section-separator1,
