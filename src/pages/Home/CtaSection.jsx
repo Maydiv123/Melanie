@@ -8,7 +8,7 @@ const CtaSection = () => {
   
   return (
     <section className="cta-section">
-    
+      <div className="cta-top-blur"></div>
       {/* Main content */}
       <div className="cta-container">
         <h2 className="cta-title">

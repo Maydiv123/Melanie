@@ -6,6 +6,7 @@
   padding: 3rem 0 2rem 0;
   font-family: 'Inter', sans-serif;
   padding-bottom: 0px;
+  border-radius: 18px;
   /* height: 300px; */
 }
 
@@ -238,6 +239,7 @@ margin-top: -10px;
     width: 100vw;
     box-sizing: border-box;
     overflow-x: hidden;
+    margin-top: 4px;
   }
   .contact-details-heading {
     margin-left: 3px !important;

@@ -7,6 +7,7 @@ body {
   padding: 4.5rem 0 2.5rem 0;
   text-align: center;
 }
+
 .aboutus-hero h1 {
   color: #fff;
   font-size: 3.2rem;
@@ -97,6 +98,7 @@ body {
 .aboutus-skills-col {
   flex: 1.2 1 0;
   color: #fff;
+  margin-left: 68px;
 }
 .aboutus-skills-col h3 {
   font-size: 1.3rem;
@@ -339,9 +341,14 @@ body {
     gap: 3rem !important;
     margin-bottom: 1.5rem !important;
   }
-  .aboutus-skills-col, .aboutus-stats-col {
+  .aboutus-stats-col {
     width: 100% !important;
     padding: 0 !important;
+  }
+  .aboutus-skills-col {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-left: -1px;
   }
   .aboutus-skill span, .aboutus-skill-percent {
     font-size: 0.8rem !important;
@@ -380,9 +387,10 @@ body {
 .aboutus-testimonials-section {
   margin: 3.5rem 1rem 4.5rem 1rem;
   padding: 2.5rem 1 2.5rem 0;
-  max-width: 900px;
+ 
   text-align: center;
   position: relative;
+ 
  
 }
 .aboutus-testimonials-title {
@@ -476,13 +484,9 @@ body {
   filter: blur(1.5px);
 }
 @media (max-width: 900px) {
-  .aboutus-testimonials-cards {
-    min-height: 340px;
-    max-width: 98vw;
-  }
   .aboutus-testimonial-card-left,
   .aboutus-testimonial-card-right {
-    display: none;
+    display: none !important;
   }
   .aboutus-testimonial-card-center {
     width: 100%;
@@ -545,7 +549,7 @@ body {
   gap: 0.7rem;
   margin-top: 2.2rem;
   margin-bottom: 2.8rem;
-  margin-right: 220px;
+  
 }
 .aboutus-testimonials-dot {
   width: 13px;
