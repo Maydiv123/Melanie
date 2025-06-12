@@ -45,9 +45,11 @@ const Footer = () => {
         <div className="footer-section-separator" />
         {/* Office Addresses */}
         <div className="section1">
-          <div style={{ fontWeight: 600, marginBottom: 4 }}></div>
+          <div style={{ fontWeight: 600, marginBottom:  71 }}></div>
           <ul className="link-list1">
-            <li className='cor' style={{marginBottom: '12px'}}>Corporate Office</li><br/>
+          
+            <li style={{marginBottom: '9px'}}>Corporate Office</li>
+
             <li style={{marginBottom: '9px'}}>Address : SCO 30 2nd Floor, Omax World Street</li>
             <li style={{marginBottom: '9px'}}>Sector 70, Greater Faridabad</li>
             <li style={{marginBottom: '9px'}}>121006</li>
@@ -57,7 +59,7 @@ const Footer = () => {
         <div className="footer-section-separator1" />
         {/* Company, Products, Legal */}
         <div className="section">
-          <div style={{ fontWeight: 400, marginBottom: 1,marginLeft: '2px',fontSize: '1.3rem' }}>Company</div>
+
           <br/>
           <ul className="link-list2">
           <li><Link to="/" className="link">Home</Link></li>
@@ -70,7 +72,7 @@ const Footer = () => {
         <div className="footer-section-separator2" />
         {/* Social Icons with PNGs from public/images in the fourth column */}
         <div className="section" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-          <div className="contact-details-heading1"style={{ fontWeight: 400, fontSize: '1.3rem', color: '#181818', marginBottom: '10px', letterSpacing: '0.5px', marginRight: '140px' }}>Follow us</div>
+          <div className="contact-details-heading1"style={{ fontWeight: 400, fontSize: '1.3rem', color: '#181818', marginTop: '49px', letterSpacing: '0.5px', marginRight: '140px' }}>Follow us</div>
           <div   className="contact-details-heading2" style={{ display: 'flex', gap: '24px', marginTop: '20px', marginRight: '80px' }}>
             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
               onMouseEnter={e => e.currentTarget.firstChild.style.transform = 'scale(1.18)'}
