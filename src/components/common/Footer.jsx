@@ -28,10 +28,10 @@ const Footer = () => {
         {/* Logo & Contact Details */}
         <div className="brand-section">
           <img src={MelanieBlackLogo} alt="Melanie Logo" className="footer-logo" />
-          <div style={{ marginTop: '2rem' }}>
+          <div style={{ marginTop: '0.7rem',fontSize: '1.1rem' }}>
             <div className="contact-details-container"></div>
        
-          <div className="contact-details-heading" style={{ fontWeight: 440, marginBottom: 7, marginLeft: '-197px' }}>
+          <div className="contact-details-heading" style={{ fontWeight: 440, marginBottom: '13px', marginLeft: '-197px' }}>
   Contact Details
 </div>
 
@@ -48,7 +48,7 @@ const Footer = () => {
           <div style={{ fontWeight: 600, marginBottom:  71 }}></div>
           <ul className="link-list1">
           
-            <li style={{marginBottom: '9px'}}>Corporate Office</li>
+            <li style={{marginBottom: '9px',fontSize: '1.1rem'}}>Corporate Office</li>
 
             <li style={{marginBottom: '9px'}}>Address : SCO 30 2nd Floor, Omax World Street</li>
             <li style={{marginBottom: '9px'}}>Sector 70, Greater Faridabad</li>
@@ -62,17 +62,17 @@ const Footer = () => {
 
           <br/>
           <ul className="link-list2">
-          <li><Link to="/" className="link">Home</Link></li>
-          <li><Link to="/about" className="link">About Us</Link></li>
-            <li><Link to="/products" className="link">Our Product</Link></li>
-           
-          </ul>
+  <li className="link-title" style={{fontSize: '1.1rem'}}>Quick links</li>
+  <li><Link to="/" className="link">Home</Link></li>
+  <li><Link to="/about" className="link">About Us</Link></li>
+  <li><Link to="/products" className="link">Our Product</Link></li>
+</ul>
         
         </div>
         <div className="footer-section-separator2" />
         {/* Social Icons with PNGs from public/images in the fourth column */}
         <div className="section" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-          <div className="contact-details-heading1"style={{ fontWeight: 400, fontSize: '1.3rem', color: '#181818', marginTop: '49px', letterSpacing: '0.5px', marginRight: '140px' }}>Follow us</div>
+          <div className="contact-details-heading1"style={{ fontWeight: 400, fontSize: '1.1rem', color: '#181818', marginTop: '49px', letterSpacing: '0.5px', marginRight: '140px' }}>Follow us</div>
           <div   className="contact-details-heading2" style={{ display: 'flex', gap: '24px', marginTop: '20px', marginRight: '80px' }}>
             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
               onMouseEnter={e => e.currentTarget.firstChild.style.transform = 'scale(1.18)'}

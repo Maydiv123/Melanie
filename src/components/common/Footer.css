@@ -20,7 +20,7 @@
 
 .copyright {
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
 
   /* color: #ccc; */
   font-family: 'Poppins', sans-serif;
@@ -78,6 +78,10 @@
   margin: 0;
   padding: 0 20px;
   box-sizing: border-box;
+ 
+}
+.section{
+margin-top: -10px;
 }
 .brand-section{
   flex: 1 1 0;
@@ -94,9 +98,9 @@
 
 
 .footer-logo {
-  height: 55px;
-  margin-top: -10px;
-  margin-left: -218px;
+  height: 72px;
+  margin-top: -34px;
+  margin-left: 370px;
 }
 
 .section-title {
@@ -125,7 +129,7 @@
   width: 100%;
   font-weight: 400;
   font-size: 1.1rem;
-  margin-top: 36px;
+  margin-top: 29px;
  
 }
 .link-list3{
@@ -136,11 +140,12 @@
   color: #181818;
   text-decoration: none;
   font-size: 1.1rem;
-  margin-bottom: 0.7rem;
+ 
   display: block;
   transition: color 0.2s;
   font-weight: 400;
-  margin-top: 14px;
+  margin-top: 8px;
+
 
  
 }
@@ -154,7 +159,7 @@
 .copyright {
   font-size: 1rem;
   color: #181818;
-  margin-top: 1rem;
+  margin-top: -1.5rem;
   line-height: 1.5;
   white-space: nowrap;
   font-weight: 400;
@@ -171,9 +176,9 @@
 .footer-section-separator {
   width: 1px;
   background: #0a0a0a;
-  height: 210px;
+  height: 120px;
   align-self: stretch;
-  margin: 0 10px;
+  margin: 44px 10px;
   opacity: 0.7;
   margin-left: -197px;
 }
@@ -187,17 +192,17 @@
 .footer-section-separator2{
   width: 1px;
   background: #0a0a0a;
-  height: 210px;
+  height: 120px;
  
-  margin: 0 10px;
+  margin: 44px 10px;
   opacity: 0.7;
 }
 .footer-section-separator1{
   width: 1px;
   background: #0a0a0a;
-  height: 210px;
+  height: 120px;
   align-self: stretch;
-  margin: 0 10px;
+  margin: 44px 10px;
   opacity: 0.7;
   margin-left: 127px;
  
@@ -208,6 +213,7 @@
 
 .link-list1{
   margin-right: -197px;
+  margin-top: -26px;
 }
 
 @media (max-width: 900px) {
@@ -238,7 +244,7 @@
     margin-top: -130px;
   }
   .contact-details-container{
-    margin-top: 100px;
+    margin-top: 120px;
   }
  
   .footer-container {
@@ -289,7 +295,7 @@
     margin-top: 0.1rem;
     text-align: center !important;
   }
-  .link-list, .link-list1, .link-list3 {
+  .link-list, .link-list3 {
     font-size: 0.7rem;
     margin: 0 !important;
     text-align: center !important;
@@ -297,6 +303,16 @@
     justify-content: center !important;
     display: flex !important;
     flex-direction: column !important;
+  }
+  .link-list1{
+    font-size: 0.7rem;
+    margin: 0 !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 120px;
   }
   .link-list2{
     font-size: 0.7rem;
