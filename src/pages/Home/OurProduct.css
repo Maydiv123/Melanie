@@ -1358,6 +1358,23 @@
     height: 94px !important;
 
   }
+  
+.shop-now-btn {
+  background: #4caf4f;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 200;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s;
+  align-self: flex-start;
+  opacity: 0;
+  transform: translateY(10px);
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
 
   .product-filter-btn {
     flex: 0 0 auto !important;
