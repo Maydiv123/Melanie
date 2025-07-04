@@ -736,6 +736,7 @@
   .product-grid-dark::-webkit-scrollbar {
     display: none !important;
   }
+
 }
 
 /* --- Top Banner/Slider with Video Background --- */
@@ -1354,7 +1355,7 @@
  
  
   .mid-card-content-overlay {
-    height: 100px !important;
+    height: 94px !important;
 
   }
 
@@ -1413,6 +1414,33 @@
     padding: 1.2rem 0.7rem !important;
     height: auto;
   }
+  
+.banner-title-advanced {
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: #fff;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+
+.banner-desc-advanced {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  font-weight: 100;
+}
+
+.banner-stats {
+  display: flex; gap: 1.5rem; margin: 1.2rem 0 0.7rem 0;
+  font-size: 0.8rem; color: #ffe066; font-weight: 200;
+  z-index: 3; position: relative;
+}
+.banner-stats .stat span { color: #fff; font-size: 0.8rem;}
 }
 
 

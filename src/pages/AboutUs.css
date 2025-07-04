@@ -314,7 +314,7 @@ body {
     border-radius: 1rem !important;
   }
   .aboutus-content-col {
-    padding: 0 !important;
+    padding: 20px !important;
     text-align: left !important;
   }
   .aboutus-section-title {
@@ -343,12 +343,13 @@ body {
   }
   .aboutus-stats-col {
     width: 100% !important;
-    padding: 0 !important;
+    padding: 27px !important;
   }
   .aboutus-skills-col {
     width: 100% !important;
-    padding: 0 !important;
+    padding: 20px !important;
     margin-left: -1px;
+    margin-top: -62px;
   }
   .aboutus-skill span, .aboutus-skill-percent {
     font-size: 0.8rem !important;

@@ -50,6 +50,8 @@ const Header = () => {
           </svg>
         </button>
       </div>
+      {/* Mobile Menu Backdrop */}
+      {menuOpen && <div className="menu-backdrop" onClick={() => setMenuOpen(false)}></div>}
       {/* Mobile Menu */}
       <nav className={`mobile-menu${menuOpen ? ' active' : ''}`}> 
         <button className="close-menu-btn" onClick={() => setMenuOpen(false)} aria-label="Close menu">×</button>

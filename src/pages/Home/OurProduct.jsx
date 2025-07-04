@@ -205,7 +205,7 @@ const ProductsSection = () => {
         {/* Filter Bar (moved here) */}
        
         {/* Featured Products Grid */}
-        <h2 className="product-section-title">#Featured Products</h2>
+        <h2 className="product-section-title">Featured Products</h2>
         <div className="product-grid-dark">
           {productsData.slice(0, 4).map((product) => (
             <div className="product-card-dark" key={product.id}>

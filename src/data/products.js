@@ -22,7 +22,7 @@ const products = [
   },
   {
     id: 4,
-    name: 'Wet Wipes',
+    name: 'Wet Wipes Pack',
     image: '/images/img_rectangle_17_1.png',
     description: 'Biodegradable wet wipes for sensitive skin.',
     price: '₹79',
